@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "iL4EEmFO1B9Uc6StxR4xLYDU+gkVyX5wP6liOJYZq3cGXuLD5ir15kbhoSfJa7vbxQJFK6Y/whIUdjaC8VqOqA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Ivo\\Desktop\\VERI IMPROTA STUF\\xd\\Web\\Properties4Sale.Web.Infrastructure\\Properties4Sale.Web.Infrastructure.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Ivo\\.nuget\\packages\\stylecop.analyzers\\1.2.0-beta.205\\stylecop.analyzers.1.2.0-beta.205.nupkg.sha512",
+    "C:\\Users\\Ivo\\.nuget\\packages\\stylecop.analyzers.unstable\\1.2.0.205\\stylecop.analyzers.unstable.1.2.0.205.nupkg.sha512"
+  ],
+  "logs": []
+}
