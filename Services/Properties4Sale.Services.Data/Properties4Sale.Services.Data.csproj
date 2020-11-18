@@ -21,6 +21,7 @@
   <ItemGroup>
     <ProjectReference Include="..\..\Data\Properties4Sale.Data.Common\Properties4Sale.Data.Common.csproj" />
     <ProjectReference Include="..\..\Data\Properties4Sale.Data.Models\Properties4Sale.Data.Models.csproj" />
+    <ProjectReference Include="..\..\Web\Properties4Sale.Web.ViewModels\Properties4Sale.Web.ViewModels.csproj" />
     <ProjectReference Include="..\Properties4Sale.Services.Mapping\Properties4Sale.Services.Mapping.csproj" />
   </ItemGroup>
 

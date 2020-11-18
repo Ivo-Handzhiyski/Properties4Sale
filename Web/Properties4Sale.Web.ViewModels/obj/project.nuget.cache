@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "VZQKVQKUvLcfYNleKhUim0Q4sOrocgyw311IQzlJK0vWohoWlj3wqZya2OypwCzE0tW9ObuwL+XPNEiorwVtYA==",
+  "dgSpecHash": "SBDhzROKxGmW+SOfpl6uCXhztF9pnZf7xBDjm5ifVSCg4T8CEp1I0Ka8XvysEHm4Q8QZPh03n7EiysuZmdECGw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Ivo\\Desktop\\VERI IMPROTA STUF\\xd\\Web\\Properties4Sale.Web.ViewModels\\Properties4Sale.Web.ViewModels.csproj",
+  "projectFilePath": "C:\\Users\\Ivo\\Desktop\\VERI IMPROTA STUF\\Properties4Sale\\Properties4Sale\\Web\\Properties4Sale.Web.ViewModels\\Properties4Sale.Web.ViewModels.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Ivo\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\Ivo\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\3.1.9\\microsoft.aspnetcore.cryptography.internal.3.1.9.nupkg.sha512",

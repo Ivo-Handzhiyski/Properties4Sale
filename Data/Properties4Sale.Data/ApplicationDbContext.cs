@@ -6,11 +6,10 @@
     using System.Threading;
     using System.Threading.Tasks;
 
-    using Properties4Sale.Data.Common.Models;
-    using Properties4Sale.Data.Models;
-
     using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
     using Microsoft.EntityFrameworkCore;
+    using Properties4Sale.Data.Common.Models;
+    using Properties4Sale.Data.Models;
 
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser, ApplicationRole, string>
     {
@@ -24,7 +23,15 @@
         {
         }
 
-        public DbSet<Setting> Settings { get; set; }
+        public DbSet<Property> Properties { get; set; }
+
+        public DbSet<Feature> Features { get; set; }
+
+        public DbSet<Image> Images { get; set; }
+
+        public DbSet<TypeOfProperty> TypeOfProperties { get; set; }
+
+        public DbSet<PropertyFeature> PropertyFeatures { get; set; }
 
         public override int SaveChanges() => this.SaveChanges(true);
 

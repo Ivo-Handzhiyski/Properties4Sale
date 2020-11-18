@@ -3,9 +3,8 @@
     using System;
     using System.Threading.Tasks;
 
-    using Properties4Sale.Data.Common;
-
     using Microsoft.EntityFrameworkCore;
+    using Properties4Sale.Data.Common;
 
     public class DbQueryRunner : IDbQueryRunner
     {
@@ -34,7 +33,5 @@
                 this.Context?.Dispose();
             }
         }
-
-      
     }
 }

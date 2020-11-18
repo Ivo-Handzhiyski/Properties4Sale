@@ -3505,7 +3505,8 @@
         "dependencies": {
           "Properties4Sale.Data.Common": "1.0.0",
           "Properties4Sale.Data.Models": "1.0.0",
-          "Properties4Sale.Services.Mapping": "1.0.0"
+          "Properties4Sale.Services.Mapping": "1.0.0",
+          "Properties4Sale.Web.ViewModels": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Properties4Sale.Services.Data.dll": {}
@@ -10874,11 +10875,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Ivo\\Desktop\\VERI IMPROTA STUF\\xd\\Tests\\Properties4Sale.Web.Tests\\Properties4Sale.Web.Tests.csproj",
+      "projectUniqueName": "C:\\Users\\Ivo\\Desktop\\VERI IMPROTA STUF\\Properties4Sale\\Properties4Sale\\Tests\\Properties4Sale.Web.Tests\\Properties4Sale.Web.Tests.csproj",
       "projectName": "Properties4Sale.Web.Tests",
-      "projectPath": "C:\\Users\\Ivo\\Desktop\\VERI IMPROTA STUF\\xd\\Tests\\Properties4Sale.Web.Tests\\Properties4Sale.Web.Tests.csproj",
+      "projectPath": "C:\\Users\\Ivo\\Desktop\\VERI IMPROTA STUF\\Properties4Sale\\Properties4Sale\\Tests\\Properties4Sale.Web.Tests\\Properties4Sale.Web.Tests.csproj",
       "packagesPath": "C:\\Users\\Ivo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Ivo\\Desktop\\VERI IMPROTA STUF\\xd\\Tests\\Properties4Sale.Web.Tests\\obj\\",
+      "outputPath": "C:\\Users\\Ivo\\Desktop\\VERI IMPROTA STUF\\Properties4Sale\\Properties4Sale\\Tests\\Properties4Sale.Web.Tests\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Ivo\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -10893,9 +10894,10 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\Ivo\\Desktop\\VERI IMPROTA STUF\\xd\\Web\\Properties4Sale.Web\\Properties4Sale.Web.csproj": {
-              "projectPath": "C:\\Users\\Ivo\\Desktop\\VERI IMPROTA STUF\\xd\\Web\\Properties4Sale.Web\\Properties4Sale.Web.csproj"
+            "C:\\Users\\Ivo\\Desktop\\VERI IMPROTA STUF\\Properties4Sale\\Properties4Sale\\Web\\Properties4Sale.Web\\Properties4Sale.Web.csproj": {
+              "projectPath": "C:\\Users\\Ivo\\Desktop\\VERI IMPROTA STUF\\Properties4Sale\\Properties4Sale\\Web\\Properties4Sale.Web\\Properties4Sale.Web.csproj"
             }
           }
         }
@@ -10908,6 +10910,7 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
+        "targetAlias": "netcoreapp3.1",
         "dependencies": {
           "Microsoft.AspNetCore.Mvc.Testing": {
             "target": "Package",
@@ -10960,7 +10963,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

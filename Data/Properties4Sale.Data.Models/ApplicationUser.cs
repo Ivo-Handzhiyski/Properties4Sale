@@ -4,9 +4,8 @@ namespace Properties4Sale.Data.Models
     using System;
     using System.Collections.Generic;
 
-    using Properties4Sale.Data.Common.Models;
-
     using Microsoft.AspNetCore.Identity;
+    using Properties4Sale.Data.Common.Models;
 
     public class ApplicationUser : IdentityUser, IAuditInfo, IDeletableEntity
     {

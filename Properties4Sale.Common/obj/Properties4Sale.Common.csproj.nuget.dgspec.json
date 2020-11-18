@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Ivo\\Desktop\\VERI IMPROTA STUF\\xd\\Properties4Sale.Common\\Properties4Sale.Common.csproj": {}
+    "C:\\Users\\Ivo\\Desktop\\VERI IMPROTA STUF\\Properties4Sale\\Properties4Sale\\Properties4Sale.Common\\Properties4Sale.Common.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Ivo\\Desktop\\VERI IMPROTA STUF\\xd\\Properties4Sale.Common\\Properties4Sale.Common.csproj": {
+    "C:\\Users\\Ivo\\Desktop\\VERI IMPROTA STUF\\Properties4Sale\\Properties4Sale\\Properties4Sale.Common\\Properties4Sale.Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ivo\\Desktop\\VERI IMPROTA STUF\\xd\\Properties4Sale.Common\\Properties4Sale.Common.csproj",
+        "projectUniqueName": "C:\\Users\\Ivo\\Desktop\\VERI IMPROTA STUF\\Properties4Sale\\Properties4Sale\\Properties4Sale.Common\\Properties4Sale.Common.csproj",
         "projectName": "Properties4Sale.Common",
-        "projectPath": "C:\\Users\\Ivo\\Desktop\\VERI IMPROTA STUF\\xd\\Properties4Sale.Common\\Properties4Sale.Common.csproj",
+        "projectPath": "C:\\Users\\Ivo\\Desktop\\VERI IMPROTA STUF\\Properties4Sale\\Properties4Sale\\Properties4Sale.Common\\Properties4Sale.Common.csproj",
         "packagesPath": "C:\\Users\\Ivo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ivo\\Desktop\\VERI IMPROTA STUF\\xd\\Properties4Sale.Common\\obj\\",
+        "outputPath": "C:\\Users\\Ivo\\Desktop\\VERI IMPROTA STUF\\Properties4Sale\\Properties4Sale\\Properties4Sale.Common\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Ivo\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -26,6 +26,7 @@
         },
         "frameworks": {
           "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
             "projectReferences": {}
           }
         },
@@ -37,6 +38,7 @@
       },
       "frameworks": {
         "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
           "dependencies": {
             "StyleCop.Analyzers": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers",
@@ -60,7 +62,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

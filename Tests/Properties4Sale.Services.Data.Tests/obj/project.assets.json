@@ -2694,7 +2694,8 @@
         "dependencies": {
           "Properties4Sale.Data.Common": "1.0.0",
           "Properties4Sale.Data.Models": "1.0.0",
-          "Properties4Sale.Services.Mapping": "1.0.0"
+          "Properties4Sale.Services.Mapping": "1.0.0",
+          "Properties4Sale.Web.ViewModels": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Properties4Sale.Services.Data.dll": {}
@@ -2714,6 +2715,20 @@
         },
         "runtime": {
           "bin/placeholder/Properties4Sale.Services.Mapping.dll": {}
+        }
+      },
+      "Properties4Sale.Web.ViewModels/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "dependencies": {
+          "Properties4Sale.Data.Models": "1.0.0",
+          "Properties4Sale.Services.Mapping": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Properties4Sale.Web.ViewModels.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Properties4Sale.Web.ViewModels.dll": {}
         }
       }
     }
@@ -8636,6 +8651,11 @@
       "type": "project",
       "path": "../../Services/Properties4Sale.Services.Mapping/Properties4Sale.Services.Mapping.csproj",
       "msbuildProject": "../../Services/Properties4Sale.Services.Mapping/Properties4Sale.Services.Mapping.csproj"
+    },
+    "Properties4Sale.Web.ViewModels/1.0.0": {
+      "type": "project",
+      "path": "../../Web/Properties4Sale.Web.ViewModels/Properties4Sale.Web.ViewModels.csproj",
+      "msbuildProject": "../../Web/Properties4Sale.Web.ViewModels/Properties4Sale.Web.ViewModels.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -8656,11 +8676,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Ivo\\Desktop\\VERI IMPROTA STUF\\xd\\Tests\\Properties4Sale.Services.Data.Tests\\Properties4Sale.Services.Data.Tests.csproj",
+      "projectUniqueName": "C:\\Users\\Ivo\\Desktop\\VERI IMPROTA STUF\\Properties4Sale\\Properties4Sale\\Tests\\Properties4Sale.Services.Data.Tests\\Properties4Sale.Services.Data.Tests.csproj",
       "projectName": "Properties4Sale.Services.Data.Tests",
-      "projectPath": "C:\\Users\\Ivo\\Desktop\\VERI IMPROTA STUF\\xd\\Tests\\Properties4Sale.Services.Data.Tests\\Properties4Sale.Services.Data.Tests.csproj",
+      "projectPath": "C:\\Users\\Ivo\\Desktop\\VERI IMPROTA STUF\\Properties4Sale\\Properties4Sale\\Tests\\Properties4Sale.Services.Data.Tests\\Properties4Sale.Services.Data.Tests.csproj",
       "packagesPath": "C:\\Users\\Ivo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Ivo\\Desktop\\VERI IMPROTA STUF\\xd\\Tests\\Properties4Sale.Services.Data.Tests\\obj\\",
+      "outputPath": "C:\\Users\\Ivo\\Desktop\\VERI IMPROTA STUF\\Properties4Sale\\Properties4Sale\\Tests\\Properties4Sale.Services.Data.Tests\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Ivo\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -8675,12 +8695,13 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\Ivo\\Desktop\\VERI IMPROTA STUF\\xd\\Data\\Properties4Sale.Data\\Properties4Sale.Data.csproj": {
-              "projectPath": "C:\\Users\\Ivo\\Desktop\\VERI IMPROTA STUF\\xd\\Data\\Properties4Sale.Data\\Properties4Sale.Data.csproj"
+            "C:\\Users\\Ivo\\Desktop\\VERI IMPROTA STUF\\Properties4Sale\\Properties4Sale\\Data\\Properties4Sale.Data\\Properties4Sale.Data.csproj": {
+              "projectPath": "C:\\Users\\Ivo\\Desktop\\VERI IMPROTA STUF\\Properties4Sale\\Properties4Sale\\Data\\Properties4Sale.Data\\Properties4Sale.Data.csproj"
             },
-            "C:\\Users\\Ivo\\Desktop\\VERI IMPROTA STUF\\xd\\Services\\Properties4Sale.Services.Data\\Properties4Sale.Services.Data.csproj": {
-              "projectPath": "C:\\Users\\Ivo\\Desktop\\VERI IMPROTA STUF\\xd\\Services\\Properties4Sale.Services.Data\\Properties4Sale.Services.Data.csproj"
+            "C:\\Users\\Ivo\\Desktop\\VERI IMPROTA STUF\\Properties4Sale\\Properties4Sale\\Services\\Properties4Sale.Services.Data\\Properties4Sale.Services.Data.csproj": {
+              "projectPath": "C:\\Users\\Ivo\\Desktop\\VERI IMPROTA STUF\\Properties4Sale\\Properties4Sale\\Services\\Properties4Sale.Services.Data\\Properties4Sale.Services.Data.csproj"
             }
           }
         }
@@ -8693,6 +8714,7 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
+        "targetAlias": "netcoreapp3.1",
         "dependencies": {
           "Microsoft.EntityFrameworkCore.InMemory": {
             "target": "Package",
@@ -8738,7 +8760,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

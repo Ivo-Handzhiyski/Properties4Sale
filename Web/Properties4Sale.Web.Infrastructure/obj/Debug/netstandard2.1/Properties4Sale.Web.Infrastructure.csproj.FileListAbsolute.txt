@@ -6,3 +6,12 @@ C:\Users\Ivo\Desktop\xd\Web\Properties4Sale.Web.Infrastructure\obj\Debug\netstan
 C:\Users\Ivo\Desktop\xd\Web\Properties4Sale.Web.Infrastructure\obj\Debug\netstandard2.1\Properties4Sale.Web.Infrastructure.csproj.CoreCompileInputs.cache
 C:\Users\Ivo\Desktop\xd\Web\Properties4Sale.Web.Infrastructure\obj\Debug\netstandard2.1\Properties4Sale.Web.Infrastructure.dll
 C:\Users\Ivo\Desktop\xd\Web\Properties4Sale.Web.Infrastructure\obj\Debug\netstandard2.1\Properties4Sale.Web.Infrastructure.pdb
+C:\Users\Ivo\Desktop\VERI IMPROTA STUF\Properties4Sale\Properties4Sale\Web\Properties4Sale.Web.Infrastructure\bin\Debug\netstandard2.1\Properties4Sale.Web.Infrastructure.deps.json
+C:\Users\Ivo\Desktop\VERI IMPROTA STUF\Properties4Sale\Properties4Sale\Web\Properties4Sale.Web.Infrastructure\bin\Debug\netstandard2.1\Properties4Sale.Web.Infrastructure.dll
+C:\Users\Ivo\Desktop\VERI IMPROTA STUF\Properties4Sale\Properties4Sale\Web\Properties4Sale.Web.Infrastructure\bin\Debug\netstandard2.1\Properties4Sale.Web.Infrastructure.pdb
+C:\Users\Ivo\Desktop\VERI IMPROTA STUF\Properties4Sale\Properties4Sale\Web\Properties4Sale.Web.Infrastructure\obj\Debug\netstandard2.1\Properties4Sale.Web.Infrastructure.csprojAssemblyReference.cache
+C:\Users\Ivo\Desktop\VERI IMPROTA STUF\Properties4Sale\Properties4Sale\Web\Properties4Sale.Web.Infrastructure\obj\Debug\netstandard2.1\Properties4Sale.Web.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\Ivo\Desktop\VERI IMPROTA STUF\Properties4Sale\Properties4Sale\Web\Properties4Sale.Web.Infrastructure\obj\Debug\netstandard2.1\Properties4Sale.Web.Infrastructure.AssemblyInfo.cs
+C:\Users\Ivo\Desktop\VERI IMPROTA STUF\Properties4Sale\Properties4Sale\Web\Properties4Sale.Web.Infrastructure\obj\Debug\netstandard2.1\Properties4Sale.Web.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\Ivo\Desktop\VERI IMPROTA STUF\Properties4Sale\Properties4Sale\Web\Properties4Sale.Web.Infrastructure\obj\Debug\netstandard2.1\Properties4Sale.Web.Infrastructure.dll
+C:\Users\Ivo\Desktop\VERI IMPROTA STUF\Properties4Sale\Properties4Sale\Web\Properties4Sale.Web.Infrastructure\obj\Debug\netstandard2.1\Properties4Sale.Web.Infrastructure.pdb

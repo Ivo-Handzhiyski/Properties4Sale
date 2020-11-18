@@ -36,4 +36,8 @@
     <ProjectReference Include="..\Properties4Sale.Web.Infrastructure\Properties4Sale.Web.Infrastructure.csproj" />
     <ProjectReference Include="..\Properties4Sale.Web.ViewModels\Properties4Sale.Web.ViewModels.csproj" />
   </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Areas\Administration\Views\Dashboard\" />
+  </ItemGroup>
 </Project>

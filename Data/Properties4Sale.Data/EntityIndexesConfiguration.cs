@@ -2,9 +2,8 @@
 {
     using System.Linq;
 
-    using Properties4Sale.Data.Common.Models;
-
     using Microsoft.EntityFrameworkCore;
+    using Properties4Sale.Data.Common.Models;
 
     internal static class EntityIndexesConfiguration
     {

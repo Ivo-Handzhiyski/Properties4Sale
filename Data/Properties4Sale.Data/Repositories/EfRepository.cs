@@ -4,9 +4,8 @@
     using System.Linq;
     using System.Threading.Tasks;
 
-    using Properties4Sale.Data.Common.Repositories;
-
     using Microsoft.EntityFrameworkCore;
+    using Properties4Sale.Data.Common.Repositories;
 
     public class EfRepository<TEntity> : IRepository<TEntity>
         where TEntity : class

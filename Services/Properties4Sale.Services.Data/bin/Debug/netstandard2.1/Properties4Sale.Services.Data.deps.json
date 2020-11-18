@@ -12,6 +12,7 @@
           "Properties4Sale.Data.Common": "1.0.0",
           "Properties4Sale.Data.Models": "1.0.0",
           "Properties4Sale.Services.Mapping": "1.0.0",
+          "Properties4Sale.Web.ViewModels": "1.0.0",
           "StyleCop.Analyzers": "1.2.0-beta.205"
         },
         "runtime": {
@@ -387,6 +388,15 @@
         "runtime": {
           "Properties4Sale.Services.Mapping.dll": {}
         }
+      },
+      "Properties4Sale.Web.ViewModels/1.0.0": {
+        "dependencies": {
+          "Properties4Sale.Data.Models": "1.0.0",
+          "Properties4Sale.Services.Mapping": "1.0.0"
+        },
+        "runtime": {
+          "Properties4Sale.Web.ViewModels.dll": {}
+        }
       }
     }
   },
@@ -652,6 +662,11 @@
       "sha512": ""
     },
     "Properties4Sale.Services.Mapping/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Properties4Sale.Web.ViewModels/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

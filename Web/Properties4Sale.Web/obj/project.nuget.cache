@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "V/rSg5QJ7tMr0jpOsiDkHN0b1g6ZKJVcnacjafLLmc5qyMCx4OHkGYNW+bDrXFO4Gyp/IAk3qYq8NiofTBaeyA==",
+  "dgSpecHash": "BwhrWD31nky/b2gPJHEIZzTEssNuDEsR6MoKM34dVLMy155yfdyCWGLdBoDjlo1Fi67rm8mUavet/nq27mDC5Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Ivo\\Desktop\\VERI IMPROTA STUF\\xd\\Web\\Properties4Sale.Web\\Properties4Sale.Web.csproj",
+  "projectFilePath": "C:\\Users\\Ivo\\Desktop\\VERI IMPROTA STUF\\Properties4Sale\\Properties4Sale\\Web\\Properties4Sale.Web\\Properties4Sale.Web.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Ivo\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\Ivo\\.nuget\\packages\\buildbundlerminifier\\3.2.449\\buildbundlerminifier.3.2.449.nupkg.sha512",

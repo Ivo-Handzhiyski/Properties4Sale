@@ -1116,11 +1116,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Ivo\\Desktop\\VERI IMPROTA STUF\\xd\\Data\\Properties4Sale.Data.Models\\Properties4Sale.Data.Models.csproj",
+      "projectUniqueName": "C:\\Users\\Ivo\\Desktop\\VERI IMPROTA STUF\\Properties4Sale\\Properties4Sale\\Data\\Properties4Sale.Data.Models\\Properties4Sale.Data.Models.csproj",
       "projectName": "Properties4Sale.Data.Models",
-      "projectPath": "C:\\Users\\Ivo\\Desktop\\VERI IMPROTA STUF\\xd\\Data\\Properties4Sale.Data.Models\\Properties4Sale.Data.Models.csproj",
+      "projectPath": "C:\\Users\\Ivo\\Desktop\\VERI IMPROTA STUF\\Properties4Sale\\Properties4Sale\\Data\\Properties4Sale.Data.Models\\Properties4Sale.Data.Models.csproj",
       "packagesPath": "C:\\Users\\Ivo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Ivo\\Desktop\\VERI IMPROTA STUF\\xd\\Data\\Properties4Sale.Data.Models\\obj\\",
+      "outputPath": "C:\\Users\\Ivo\\Desktop\\VERI IMPROTA STUF\\Properties4Sale\\Properties4Sale\\Data\\Properties4Sale.Data.Models\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Ivo\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -1135,9 +1135,10 @@
       },
       "frameworks": {
         "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
           "projectReferences": {
-            "C:\\Users\\Ivo\\Desktop\\VERI IMPROTA STUF\\xd\\Data\\Properties4Sale.Data.Common\\Properties4Sale.Data.Common.csproj": {
-              "projectPath": "C:\\Users\\Ivo\\Desktop\\VERI IMPROTA STUF\\xd\\Data\\Properties4Sale.Data.Common\\Properties4Sale.Data.Common.csproj"
+            "C:\\Users\\Ivo\\Desktop\\VERI IMPROTA STUF\\Properties4Sale\\Properties4Sale\\Data\\Properties4Sale.Data.Common\\Properties4Sale.Data.Common.csproj": {
+              "projectPath": "C:\\Users\\Ivo\\Desktop\\VERI IMPROTA STUF\\Properties4Sale\\Properties4Sale\\Data\\Properties4Sale.Data.Common\\Properties4Sale.Data.Common.csproj"
             }
           }
         }
@@ -1150,6 +1151,7 @@
     },
     "frameworks": {
       "netstandard2.1": {
+        "targetAlias": "netstandard2.1",
         "dependencies": {
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
             "target": "Package",
@@ -1177,7 +1179,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

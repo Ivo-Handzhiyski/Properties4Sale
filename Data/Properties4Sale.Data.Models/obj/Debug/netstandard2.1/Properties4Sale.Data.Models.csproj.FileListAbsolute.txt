@@ -10,3 +10,15 @@ C:\Users\Ivo\Desktop\xd\Data\Properties4Sale.Data.Models\obj\Debug\netstandard2.
 C:\Users\Ivo\Desktop\xd\Data\Properties4Sale.Data.Models\obj\Debug\netstandard2.1\Properties4Sale.Data.Models.csproj.CopyComplete
 C:\Users\Ivo\Desktop\xd\Data\Properties4Sale.Data.Models\obj\Debug\netstandard2.1\Properties4Sale.Data.Models.dll
 C:\Users\Ivo\Desktop\xd\Data\Properties4Sale.Data.Models\obj\Debug\netstandard2.1\Properties4Sale.Data.Models.pdb
+C:\Users\Ivo\Desktop\VERI IMPROTA STUF\Properties4Sale\Properties4Sale\Data\Properties4Sale.Data.Models\bin\Debug\netstandard2.1\Properties4Sale.Data.Models.deps.json
+C:\Users\Ivo\Desktop\VERI IMPROTA STUF\Properties4Sale\Properties4Sale\Data\Properties4Sale.Data.Models\bin\Debug\netstandard2.1\Properties4Sale.Data.Models.dll
+C:\Users\Ivo\Desktop\VERI IMPROTA STUF\Properties4Sale\Properties4Sale\Data\Properties4Sale.Data.Models\bin\Debug\netstandard2.1\Properties4Sale.Data.Models.pdb
+C:\Users\Ivo\Desktop\VERI IMPROTA STUF\Properties4Sale\Properties4Sale\Data\Properties4Sale.Data.Models\bin\Debug\netstandard2.1\Properties4Sale.Data.Common.dll
+C:\Users\Ivo\Desktop\VERI IMPROTA STUF\Properties4Sale\Properties4Sale\Data\Properties4Sale.Data.Models\bin\Debug\netstandard2.1\Properties4Sale.Data.Common.pdb
+C:\Users\Ivo\Desktop\VERI IMPROTA STUF\Properties4Sale\Properties4Sale\Data\Properties4Sale.Data.Models\obj\Debug\netstandard2.1\Properties4Sale.Data.Models.csprojAssemblyReference.cache
+C:\Users\Ivo\Desktop\VERI IMPROTA STUF\Properties4Sale\Properties4Sale\Data\Properties4Sale.Data.Models\obj\Debug\netstandard2.1\Properties4Sale.Data.Models.AssemblyInfoInputs.cache
+C:\Users\Ivo\Desktop\VERI IMPROTA STUF\Properties4Sale\Properties4Sale\Data\Properties4Sale.Data.Models\obj\Debug\netstandard2.1\Properties4Sale.Data.Models.AssemblyInfo.cs
+C:\Users\Ivo\Desktop\VERI IMPROTA STUF\Properties4Sale\Properties4Sale\Data\Properties4Sale.Data.Models\obj\Debug\netstandard2.1\Properties4Sale.Data.Models.csproj.CoreCompileInputs.cache
+C:\Users\Ivo\Desktop\VERI IMPROTA STUF\Properties4Sale\Properties4Sale\Data\Properties4Sale.Data.Models\obj\Debug\netstandard2.1\Properties4Sale.Data.Models.csproj.CopyComplete
+C:\Users\Ivo\Desktop\VERI IMPROTA STUF\Properties4Sale\Properties4Sale\Data\Properties4Sale.Data.Models\obj\Debug\netstandard2.1\Properties4Sale.Data.Models.dll
+C:\Users\Ivo\Desktop\VERI IMPROTA STUF\Properties4Sale\Properties4Sale\Data\Properties4Sale.Data.Models\obj\Debug\netstandard2.1\Properties4Sale.Data.Models.pdb

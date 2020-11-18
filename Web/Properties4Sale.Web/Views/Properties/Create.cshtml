@@ -1,0 +1,40 @@
+﻿@model Properties4Sale.Web.ViewModels.Property.CreatePropertyInputModel
+@{
+    ViewData["Title"] = "Create new property";
+    var TypeOfPropertiesItems = this.Model.TypeOfPropertiesItems.Select(x => new SelectListItem(x.Value, x.Key));
+}
+
+<h1>Create</h1>
+
+<form method="post">
+    <div asp-validation-summary="All" class="text-danger"></div>
+    <div class="form-group">
+        <label asp-for="Name"></label>
+        <input asp-for="Name" class="form-control" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Description"></label>
+        <input asp-for="Description" class="form-control" />
+        <span asp-validation-for="Description" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Location"></label>
+        <input asp-for="Location" class="form-control" />
+        <span asp-validation-for="Location" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Price"></label>
+        <input asp-for="Price" class="form-control" />
+        <span asp-validation-for="Price" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="TypeOfPropertyId">Type Of Property</label>
+        <select asp-for="TypeOfPropertyId" class="form-control" asp-items="TypeOfPropertiesItems"></select>
+        <span asp-validation-for="TypeOfPropertyId" class="text-danger"></span>
+    </div>
+
+    <input type="submit" class="btn-primary" />
+
+</form>
+

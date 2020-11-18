@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "gdE43mfLaxY3o7oNH4Uy419unu+nCBBtszppzCiNqWrxeSoOrGW/UKWAWlQN/T5GXlt7yh6fxVisI7+St6GrSg==",
+  "dgSpecHash": "m/t/73hU8XhBWfm6p7iBgpYpqQoP7EOcFFa0wtm8MAm5XGvqW2kg2kpoYYPGgM05b+t44xiomuQEI5s5kJ0RcA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Ivo\\Desktop\\VERI IMPROTA STUF\\xd\\Data\\Properties4Sale.Data.Models\\Properties4Sale.Data.Models.csproj",
+  "projectFilePath": "C:\\Users\\Ivo\\Desktop\\VERI IMPROTA STUF\\Properties4Sale\\Properties4Sale\\Data\\Properties4Sale.Data.Models\\Properties4Sale.Data.Models.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Ivo\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\3.1.9\\microsoft.aspnetcore.cryptography.internal.3.1.9.nupkg.sha512",
     "C:\\Users\\Ivo\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\3.1.9\\microsoft.aspnetcore.cryptography.keyderivation.3.1.9.nupkg.sha512",

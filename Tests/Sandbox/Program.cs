@@ -5,21 +5,18 @@
     using System.IO;
     using System.Threading.Tasks;
 
+    using CommandLine;
+    using Microsoft.EntityFrameworkCore;
+    using Microsoft.Extensions.Configuration;
+    using Microsoft.Extensions.DependencyInjection;
+    using Microsoft.Extensions.Logging;
     using Properties4Sale.Data;
     using Properties4Sale.Data.Common;
     using Properties4Sale.Data.Common.Repositories;
     using Properties4Sale.Data.Models;
     using Properties4Sale.Data.Repositories;
     using Properties4Sale.Data.Seeding;
-    using Properties4Sale.Services.Data;
     using Properties4Sale.Services.Messaging;
-
-    using CommandLine;
-
-    using Microsoft.EntityFrameworkCore;
-    using Microsoft.Extensions.Configuration;
-    using Microsoft.Extensions.DependencyInjection;
-    using Microsoft.Extensions.Logging;
 
     public static class Program
     {
@@ -43,20 +40,14 @@
                 serviceProvider = serviceScope.ServiceProvider;
 
                 return Parser.Default.ParseArguments<SandboxOptions>(args).MapResult(
-                    opts => SandboxCode(opts, serviceProvider).GetAwaiter().GetResult(),
+                    opts => SandboxCode(opts, serviceProvider),
                     _ => 255);
             }
         }
 
-        private static async Task<int> SandboxCode(SandboxOptions options, IServiceProvider serviceProvider)
+        private static int SandboxCode(SandboxOptions options, IServiceProvider serviceProvider)
         {
-            var sw = Stopwatch.StartNew();
-
-            var settingsService = serviceProvider.GetService<ISettingsService>();
-            Console.WriteLine($"Count of settings: {settingsService.GetCount()}");
-
-            Console.WriteLine(sw.Elapsed);
-            return await Task.FromResult(0);
+            return 1;
         }
 
         private static void ConfigureServices(ServiceCollection services)
@@ -81,7 +72,6 @@
 
             // Application services
             services.AddTransient<IEmailSender, NullMessageSender>();
-            services.AddTransient<ISettingsService, SettingsService>();
         }
     }
 }

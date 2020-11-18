@@ -1,8 +1,8 @@
 ﻿namespace Properties4Sale.Data.Configurations
 {
-    using Properties4Sale.Data.Models;
     using Microsoft.EntityFrameworkCore;
     using Microsoft.EntityFrameworkCore.Metadata.Builders;
+    using Properties4Sale.Data.Models;
 
     public class ApplicationUserConfiguration : IEntityTypeConfiguration<ApplicationUser>
     {
