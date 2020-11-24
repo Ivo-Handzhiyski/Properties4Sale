@@ -19,6 +19,7 @@
     using Properties4Sale.Services.Data;
     using Properties4Sale.Services.Mapping;
     using Properties4Sale.Services.Messaging;
+    using Properties4Sale.Web.Models;
     using Properties4Sale.Web.ViewModels;
 
     public class Startup
@@ -52,6 +53,8 @@
                         options.Filters.Add(new AutoValidateAntiforgeryTokenAttribute());
                     }).AddRazorRuntimeCompilation();
             services.AddRazorPages();
+
+            services.Configure<ReCaptchaSettings>(this.configuration.GetSection("GooglereCaptcha"));
 
             services.AddSingleton(this.configuration);
 

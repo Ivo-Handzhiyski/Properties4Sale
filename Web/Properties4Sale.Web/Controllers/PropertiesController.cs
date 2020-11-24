@@ -5,6 +5,7 @@
     using System.Linq;
     using System.Threading.Tasks;
 
+    using Microsoft.AspNetCore.Authorization;
     using Microsoft.AspNetCore.Mvc;
     using Properties4Sale.Services.Data;
     using Properties4Sale.Web.ViewModels.Property;
@@ -22,6 +23,7 @@
             this.propertiesService = propertiesService;
         }
 
+        [Authorize]
         public IActionResult Create()
         {
             var viewModel = new CreatePropertyInputModel();
