@@ -22,7 +22,7 @@
             this.featuresRepository = featuresRepository;
         }
 
-        public async Task CreateAsync(CreatePropertyInputModel input)
+        public async Task CreateAsync(CreatePropertyInputModel input, string userId)
         {
             var property = new Property
             {
@@ -31,6 +31,7 @@
                 Description = input.Description,
                 Location = input.Location,
                 Price = input.Price,
+                AddedByUserId = userId,
             };
 
             await this.propertiesRepository.AddAsync(property);

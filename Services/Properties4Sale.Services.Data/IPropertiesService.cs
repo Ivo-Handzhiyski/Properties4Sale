@@ -9,6 +9,6 @@
 
     public interface IPropertiesService
     {
-        Task CreateAsync(CreatePropertyInputModel input);
+        Task CreateAsync(CreatePropertyInputModel input, string userId);
     }
 }

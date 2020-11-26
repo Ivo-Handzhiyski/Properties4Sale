@@ -6,7 +6,9 @@
     using System.Threading.Tasks;
 
     using Microsoft.AspNetCore.Authorization;
+    using Microsoft.AspNetCore.Identity;
     using Microsoft.AspNetCore.Mvc;
+    using Properties4Sale.Data.Models;
     using Properties4Sale.Services.Data;
     using Properties4Sale.Web.ViewModels.Property;
 
@@ -14,13 +16,16 @@
     {
         private readonly ITypeOfPropertiesService typeOfPropertiesService;
         private readonly IPropertiesService propertiesService;
+        private readonly UserManager<ApplicationUser> userManager;
 
         public PropertiesController(
             ITypeOfPropertiesService typeOfPropertiesService,
-            IPropertiesService propertiesService)
+            IPropertiesService propertiesService,
+            UserManager<ApplicationUser> userManager)
         {
             this.typeOfPropertiesService = typeOfPropertiesService;
             this.propertiesService = propertiesService;
+            this.userManager = userManager;
         }
 
         [Authorize]
@@ -32,6 +37,7 @@
         }
 
         [HttpPost]
+        [Authorize]
         public async Task<IActionResult> Create(CreatePropertyInputModel input)
         {
             if (!this.ModelState.IsValid)
@@ -40,7 +46,8 @@
                 return this.View(input);
             }
 
-            await this.propertiesService.CreateAsync(input);
+            var user = await this.userManager.GetUserAsync(this.User);
+            await this.propertiesService.CreateAsync(input, user.Id);
 
             return this.Redirect("/");
         }
