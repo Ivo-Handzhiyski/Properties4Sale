@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "U5jUSUNeXxNqAQabIXzwCHkdvBoXcsYu41mVZ3wcajzDXrOCAs3AgNGa7ZKWnw6PLwSEo24WlZJ0gh69fpHrOA==",
+  "dgSpecHash": "OyCLOxzk6bCkIYhhVN6I3maN/XiwMctMnxCHCZ1x2TMHhJUo0quv5VS1vBtN97gEI2CHBHwEiRTfFOjHyyVM4w==",
   "success": true,
   "projectFilePath": "C:\\Users\\Ivo\\Desktop\\VERI IMPROTA STUF\\Properties4Sale\\Properties4Sale\\Tests\\Properties4Sale.Services.Data.Tests\\Properties4Sale.Services.Data.Tests.csproj",
   "expectedPackageFiles": [
@@ -54,7 +54,7 @@
     "C:\\Users\\Ivo\\.nuget\\packages\\microsoft.win32.registry\\4.5.0\\microsoft.win32.registry.4.5.0.nupkg.sha512",
     "C:\\Users\\Ivo\\.nuget\\packages\\moq\\4.14.7\\moq.4.14.7.nupkg.sha512",
     "C:\\Users\\Ivo\\.nuget\\packages\\netstandard.library\\1.6.1\\netstandard.library.1.6.1.nupkg.sha512",
-    "C:\\Users\\Ivo\\.nuget\\packages\\newtonsoft.json\\10.0.1\\newtonsoft.json.10.0.1.nupkg.sha512",
+    "C:\\Users\\Ivo\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
     "C:\\Users\\Ivo\\.nuget\\packages\\nuget.frameworks\\5.0.0\\nuget.frameworks.5.0.0.nupkg.sha512",
     "C:\\Users\\Ivo\\.nuget\\packages\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "C:\\Users\\Ivo\\.nuget\\packages\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",

@@ -21,6 +21,7 @@
     using Properties4Sale.Services.Messaging;
     using Properties4Sale.Web.Models;
     using Properties4Sale.Web.ViewModels;
+    using Properties4Sale.Web.Controllers;
 
     public class Startup
     {
@@ -68,6 +69,7 @@
             services.AddTransient<IGetCountService, GetCountService>();
             services.AddTransient<ITypeOfPropertiesService, TypeOfPropertiesService>();
             services.AddTransient<IPropertiesService, PropertiesService>();
+            services.AddTransient<IGoogleReCapthaService, GoogleReCapthaService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

@@ -15,6 +15,7 @@
     using Microsoft.AspNetCore.Mvc.RazorPages;
     using Microsoft.Extensions.Logging;
     using Properties4Sale.Data.Models;
+    using Properties4Sale.Web.Controllers;
 
     [AllowAnonymous]
     public class LoginModel : PageModel
@@ -22,14 +23,18 @@
         private readonly UserManager<ApplicationUser> _userManager;
         private readonly SignInManager<ApplicationUser> _signInManager;
         private readonly ILogger<LoginModel> _logger;
+        private readonly  ReCaptchaController reCaptcha;
 
         public LoginModel(SignInManager<ApplicationUser> signInManager, 
             ILogger<LoginModel> logger,
-            UserManager<ApplicationUser> userManager)
+            UserManager<ApplicationUser> userManager,
+            ReCaptchaController reCaptcha
+            )
         {
             this._userManager = userManager;
             this._signInManager = signInManager;
             this._logger = logger;
+            this.reCaptcha = reCaptcha;
         }
 
         [BindProperty]
@@ -54,6 +59,9 @@
 
             [Display(Name = "Remember me?")]
             public bool RememberMe { get; set; }
+
+            [Required]
+            public string Token { get; set; }
         }
 
         public async Task OnGetAsync(string returnUrl = null)
@@ -76,6 +84,17 @@
         public async Task<IActionResult> OnPostAsync(string returnUrl = null)
         {
             returnUrl = returnUrl ?? Url.Content("~/");
+
+            // Google ReCaptcha
+            var recaptcha = this.reCaptcha.ValidateResponse(this.Input.Token);
+            if (!recaptcha.Result.Success && recaptcha.Result.Score <= 0.5)
+            {
+                this.ModelState.AddModelError(string.Empty, "You are possibly using fake account!");
+
+                this.ExternalLogins = (await this._signInManager.GetExternalAuthenticationSchemesAsync()).ToList();
+
+                return this.Page();
+            }
 
             if (ModelState.IsValid)
             {
