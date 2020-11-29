@@ -15,7 +15,6 @@
     using Microsoft.AspNetCore.Mvc.RazorPages;
     using Microsoft.Extensions.Logging;
     using Properties4Sale.Data.Models;
-    using Properties4Sale.Web.Controllers;
 
     [AllowAnonymous]
     public class LoginModel : PageModel
@@ -23,18 +22,14 @@
         private readonly UserManager<ApplicationUser> _userManager;
         private readonly SignInManager<ApplicationUser> _signInManager;
         private readonly ILogger<LoginModel> _logger;
-        private readonly  ReCaptchaController reCaptcha;
 
         public LoginModel(SignInManager<ApplicationUser> signInManager, 
             ILogger<LoginModel> logger,
-            UserManager<ApplicationUser> userManager,
-            ReCaptchaController reCaptcha
-            )
+            UserManager<ApplicationUser> userManager)
         {
             this._userManager = userManager;
             this._signInManager = signInManager;
             this._logger = logger;
-            this.reCaptcha = reCaptcha;
         }
 
         [BindProperty]
@@ -59,9 +54,6 @@
 
             [Display(Name = "Remember me?")]
             public bool RememberMe { get; set; }
-
-            [Required]
-            public string Token { get; set; }
         }
 
         public async Task OnGetAsync(string returnUrl = null)
@@ -85,45 +77,34 @@
         {
             returnUrl = returnUrl ?? Url.Content("~/");
 
-            // Google ReCaptcha
-            var recaptcha = this.reCaptcha.ValidateResponse(this.Input.Token);
-            if (!recaptcha.Result.Success && recaptcha.Result.Score <= 0.5)
-            {
-                this.ModelState.AddModelError(string.Empty, "You are possibly using fake account!");
-
-                this.ExternalLogins = (await this._signInManager.GetExternalAuthenticationSchemesAsync()).ToList();
-
-                return this.Page();
-            }
-
             if (ModelState.IsValid)
             {
                 // This doesn't count login failures towards account lockout
                 // To enable password failures to trigger account lockout, set lockoutOnFailure: true
-                var result = await _signInManager.PasswordSignInAsync(Input.Email, Input.Password, Input.RememberMe, lockoutOnFailure: false);
+                var result = await this._signInManager.PasswordSignInAsync(this.Input.Email, this.Input.Password, this.Input.RememberMe, lockoutOnFailure: false);
                 if (result.Succeeded)
                 {
-                    _logger.LogInformation("User logged in.");
-                    return LocalRedirect(returnUrl);
+                    this._logger.LogInformation("User logged in.");
+                    return this.LocalRedirect(returnUrl);
                 }
                 if (result.RequiresTwoFactor)
                 {
-                    return RedirectToPage("./LoginWith2fa", new { ReturnUrl = returnUrl, RememberMe = Input.RememberMe });
+                    return this.RedirectToPage("./LoginWith2fa", new { ReturnUrl = returnUrl, this.Input.RememberMe });
                 }
                 if (result.IsLockedOut)
                 {
-                    _logger.LogWarning("User account locked out.");
-                    return RedirectToPage("./Lockout");
+                    this._logger.LogWarning("User account locked out.");
+                    return this.RedirectToPage("./Lockout");
                 }
                 else
                 {
-                    ModelState.AddModelError(string.Empty, "Invalid login attempt.");
-                    return Page();
+                    this.ModelState.AddModelError(string.Empty, "Invalid login attempt.");
+                    return this.Page();
                 }
             }
 
             // If we got this far, something failed, redisplay form
-            return Page();
+            return this.Page();
         }
     }
 }

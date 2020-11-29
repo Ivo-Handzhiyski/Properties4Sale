@@ -12,10 +12,10 @@ using System;
 using System.Reflection;
 
 [assembly: Microsoft.AspNetCore.Identity.UI.UIFrameworkAttribute("Bootstrap4")]
-[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("Properties4Sale.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "C:\\Users\\Ivo\\Desktop\\VERI IMPROTA STUF\\Properties4Sale\\Properties4Sale\\Data\\Prope" +
-    "rties4Sale.Data", "Properties4Sale.Data.csproj", "0")]
-[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("Properties4Sale.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "C:\\Users\\Ivo\\Desktop\\VERI IMPROTA STUF\\Properties4Sale\\Properties4Sale\\Web\\Proper" +
-    "ties4Sale.Web", "Properties4Sale.Web.csproj", "0")]
+[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("Properties4Sale.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "C:\\Users\\Ivo\\Desktop\\VERI IMPROTA STUF\\prp\\Properties4Sale-main\\Data\\Properties4S" +
+    "ale.Data", "Properties4Sale.Data.csproj", "0")]
+[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("Properties4Sale.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "C:\\Users\\Ivo\\Desktop\\VERI IMPROTA STUF\\prp\\Properties4Sale-main\\Web\\Properties4Sa" +
+    "le.Web", "Properties4Sale.Web.csproj", "0")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("Properties4Sale.Web.Tests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]

@@ -5,6 +5,8 @@
     using System.ComponentModel.DataAnnotations;
     using System.Text;
 
+    using Microsoft.AspNetCore.Http;
+
     public class CreatePropertyInputModel
     {
         [Required]
@@ -22,6 +24,8 @@
         public int Price { get; set; }
 
         public int TypeOfPropertyId { get; set; }
+
+        public IEnumerable<IFormFile> Images { get; set; }
 
         public IEnumerable<PropertyFeatureInputModel> Features { get; set; }
 

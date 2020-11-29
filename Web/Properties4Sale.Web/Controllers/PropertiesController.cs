@@ -6,6 +6,7 @@
     using System.Threading.Tasks;
 
     using Microsoft.AspNetCore.Authorization;
+    using Microsoft.AspNetCore.Hosting;
     using Microsoft.AspNetCore.Identity;
     using Microsoft.AspNetCore.Mvc;
     using Properties4Sale.Data.Models;
@@ -17,22 +18,27 @@
         private readonly ITypeOfPropertiesService typeOfPropertiesService;
         private readonly IPropertiesService propertiesService;
         private readonly UserManager<ApplicationUser> userManager;
+        private readonly IWebHostEnvironment environment;
 
         public PropertiesController(
             ITypeOfPropertiesService typeOfPropertiesService,
             IPropertiesService propertiesService,
-            UserManager<ApplicationUser> userManager)
+            UserManager<ApplicationUser> userManager,
+            IWebHostEnvironment environment)
         {
             this.typeOfPropertiesService = typeOfPropertiesService;
             this.propertiesService = propertiesService;
             this.userManager = userManager;
+            this.environment = environment;
         }
 
         [Authorize]
         public IActionResult Create()
         {
-            var viewModel = new CreatePropertyInputModel();
-            viewModel.TypeOfPropertiesItems = this.typeOfPropertiesService.GetAllKeyValuePairs();
+            var viewModel = new CreatePropertyInputModel
+            {
+                TypeOfPropertiesItems = this.typeOfPropertiesService.GetAllKeyValuePairs(),
+            };
             return this.View(viewModel);
         }
 
@@ -47,14 +53,33 @@
             }
 
             var user = await this.userManager.GetUserAsync(this.User);
-            await this.propertiesService.CreateAsync(input, user.Id);
+
+            try
+            {
+                await this.propertiesService.CreateAsync(input, user.Id, $"{this.environment.WebRootPath}/images");
+            }
+            catch (Exception ex)
+            {
+
+                this.ModelState.AddModelError(string.Empty, ex.Message);
+                input.TypeOfPropertiesItems = this.typeOfPropertiesService.GetAllKeyValuePairs();
+                return this.View(input);
+            }
 
             return this.Redirect("/");
         }
 
-        public IActionResult All(int id)
+        public IActionResult All(int id = 1)
         {
-            return this.View();
+            const int ItemsPerPage = 12;
+            var viewModel = new PropertiesListViewModel
+            {
+                ItemsPerPage = ItemsPerPage,
+                PageNumber = id,
+                PropertiesCount = this.propertiesService.GetCount(),
+                Properties = this.propertiesService.GetAll<VisualisePropertiesViewModel>(id, ItemsPerPage),
+            };
+            return this.View(viewModel);
         }
     }
 }

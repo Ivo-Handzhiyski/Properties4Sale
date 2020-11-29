@@ -1,7 +1,54 @@
-﻿
+﻿@model Properties4Sale.Web.ViewModels.Property.PropertiesListViewModel
 @{
     ViewData["Title"] = "All";
 }
 
 <h1>All</h1>
+<div class="row row-cols-lg-2">
+    @foreach (var property in this.Model.Properties)
+    {
 
+
+        <div class="card">
+            <img class="card-img-top" src="@property.ImageUrl" alt="Card image cap">
+            <div class="card-body">
+                <h4 class="card-title">@property.Name</h4>
+                <p class="card-text">
+                    @property.Description
+                </p>
+                <a href="#!" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+
+    }
+</div>
+<hr />
+<nav aria-label="...">
+    <ul class="pagination justify-content-center">
+        <li class="page-item @if(!Model.HasPreviousPage) { <text>disabled</text> } ">
+            <a class="page-link" <a class="page-link" asp-action="All" asp-route-id="@Model.PreviousPageNumber">Previous</a>
+        </li>
+        @for (int i = Model.PageNumber - 3; i < Model.PageNumber; i++)
+        {
+            if (i > 0)
+            {
+                <li class="page-item"><a class="page-link" asp-action="All" asp-route-id="@i">@i</a></li>
+            }
+
+        }
+        <li class="page-item active">
+            <a class="page-link" href="#!">@Model.PageNumber <span class="sr-only">(current)</span></a>
+        </li>
+        @for (int i = Model.PageNumber + 1; i <= Model.PageNumber + 3; i++)
+        {
+            if (i <= Model.PagesCount)
+            {
+                <li class="page-item"><a class="page-link" asp-action="All" asp-route-id="@i">@i</a></li>
+            }
+
+        }
+        <li class="page-item @if(!Model.HasNextPage) { <text>disabled</text> } ">
+            <a class="page-link" <a class="page-link" asp-action="All" asp-route-id="@Model.NextPageNumber">Next</a>
+        </li>
+    </ul>
+</nav>

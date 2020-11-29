@@ -17,6 +17,8 @@
 
         public virtual Property Property { get; set; }
 
+        public string RemoteImageUrl { get; set; }
+
         public string AddedByUserid { get; set; }
 
         public ApplicationUser AddedByUser { get; set; }

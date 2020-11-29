@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "0UByqqlBt6WsF/fR4WVJlAe656nc3AAaxs68HkZEihWfj1lXrqj9D+fXwZLRbcCqXcSIAJ+/OaA4jyIRg8sBPQ==",
+  "dgSpecHash": "finzgMKuWkjzxncckbPAzvzpSuX95XTLYd6rvDAS73S1VxOnB6JZqFmZE5gPLAvpeDs3/NsH/g5IGeF1URsbDg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Ivo\\Desktop\\VERI IMPROTA STUF\\Properties4Sale\\Properties4Sale\\Services\\Properties4Sale.Services.Mapping\\Properties4Sale.Services.Mapping.csproj",
+  "projectFilePath": "C:\\Users\\Ivo\\Desktop\\VERI IMPROTA STUF\\prp\\Properties4Sale-main\\Services\\Properties4Sale.Services.Mapping\\Properties4Sale.Services.Mapping.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Ivo\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\Ivo\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
