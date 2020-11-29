@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "nu/f5sjQ9N5vdrUdk8Js3uafuLnfyR6BGq7XCCq8eAP/A7hOX3/kf1/sGZEmSBhX07bRKCvaic2NOiZfJlYE2A==",
+  "dgSpecHash": "15BtUXEHyM80VLvR8lZfHvLgX7LuDb1xR8/4geKusgwKzu1jM9Vn5KoB/0DhHa93f83AXBS4MF/jS2Dja1kr6g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Ivo\\Desktop\\VERI IMPROTA STUF\\prp\\Properties4Sale-main\\Data\\Properties4Sale.Data\\Properties4Sale.Data.csproj",
+  "projectFilePath": "C:\\Users\\Ivo\\Desktop\\VERI IMPROTA STUF\\Properties4Sale\\Properties4Sale\\Data\\Properties4Sale.Data\\Properties4Sale.Data.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Ivo\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Ivo\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\5.0.0\\microsoft.aspnetcore.cryptography.internal.5.0.0.nupkg.sha512",

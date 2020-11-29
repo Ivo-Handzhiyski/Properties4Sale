@@ -1327,11 +1327,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Ivo\\Desktop\\VERI IMPROTA STUF\\prp\\Properties4Sale-main\\Web\\Properties4Sale.Web.ViewModels\\Properties4Sale.Web.ViewModels.csproj",
+      "projectUniqueName": "C:\\Users\\Ivo\\Desktop\\VERI IMPROTA STUF\\Properties4Sale\\Properties4Sale\\Web\\Properties4Sale.Web.ViewModels\\Properties4Sale.Web.ViewModels.csproj",
       "projectName": "Properties4Sale.Web.ViewModels",
-      "projectPath": "C:\\Users\\Ivo\\Desktop\\VERI IMPROTA STUF\\prp\\Properties4Sale-main\\Web\\Properties4Sale.Web.ViewModels\\Properties4Sale.Web.ViewModels.csproj",
+      "projectPath": "C:\\Users\\Ivo\\Desktop\\VERI IMPROTA STUF\\Properties4Sale\\Properties4Sale\\Web\\Properties4Sale.Web.ViewModels\\Properties4Sale.Web.ViewModels.csproj",
       "packagesPath": "C:\\Users\\Ivo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Ivo\\Desktop\\VERI IMPROTA STUF\\prp\\Properties4Sale-main\\Web\\Properties4Sale.Web.ViewModels\\obj\\",
+      "outputPath": "C:\\Users\\Ivo\\Desktop\\VERI IMPROTA STUF\\Properties4Sale\\Properties4Sale\\Web\\Properties4Sale.Web.ViewModels\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Ivo\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -1348,11 +1348,11 @@
         "netstandard2.1": {
           "targetAlias": "netstandard2.1",
           "projectReferences": {
-            "C:\\Users\\Ivo\\Desktop\\VERI IMPROTA STUF\\prp\\Properties4Sale-main\\Data\\Properties4Sale.Data.Models\\Properties4Sale.Data.Models.csproj": {
-              "projectPath": "C:\\Users\\Ivo\\Desktop\\VERI IMPROTA STUF\\prp\\Properties4Sale-main\\Data\\Properties4Sale.Data.Models\\Properties4Sale.Data.Models.csproj"
+            "C:\\Users\\Ivo\\Desktop\\VERI IMPROTA STUF\\Properties4Sale\\Properties4Sale\\Data\\Properties4Sale.Data.Models\\Properties4Sale.Data.Models.csproj": {
+              "projectPath": "C:\\Users\\Ivo\\Desktop\\VERI IMPROTA STUF\\Properties4Sale\\Properties4Sale\\Data\\Properties4Sale.Data.Models\\Properties4Sale.Data.Models.csproj"
             },
-            "C:\\Users\\Ivo\\Desktop\\VERI IMPROTA STUF\\prp\\Properties4Sale-main\\Services\\Properties4Sale.Services.Mapping\\Properties4Sale.Services.Mapping.csproj": {
-              "projectPath": "C:\\Users\\Ivo\\Desktop\\VERI IMPROTA STUF\\prp\\Properties4Sale-main\\Services\\Properties4Sale.Services.Mapping\\Properties4Sale.Services.Mapping.csproj"
+            "C:\\Users\\Ivo\\Desktop\\VERI IMPROTA STUF\\Properties4Sale\\Properties4Sale\\Services\\Properties4Sale.Services.Mapping\\Properties4Sale.Services.Mapping.csproj": {
+              "projectPath": "C:\\Users\\Ivo\\Desktop\\VERI IMPROTA STUF\\Properties4Sale\\Properties4Sale\\Services\\Properties4Sale.Services.Mapping\\Properties4Sale.Services.Mapping.csproj"
             }
           }
         }

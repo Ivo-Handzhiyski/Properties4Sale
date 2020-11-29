@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "9lNnbaCPh1+a3N3B1qZNOUdkvnu7U6Lh6S0BGeyehrM9JVbMwapYLFTT++BbaiiaTme4tUrgquLwIR7kXwC8jA==",
+  "dgSpecHash": "1CLkhjXucI2M+zTYgbFbpHxrY6k9tPinRShQI0LpBfo94AJYGbbccvZ+hsHqdxNk60QZUg6cEzGy/26W/YQtOQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Ivo\\Desktop\\VERI IMPROTA STUF\\prp\\Properties4Sale-main\\Services\\Properties4Sale.Services\\Properties4Sale.Services.csproj",
+  "projectFilePath": "C:\\Users\\Ivo\\Desktop\\VERI IMPROTA STUF\\Properties4Sale\\Properties4Sale\\Services\\Properties4Sale.Services\\Properties4Sale.Services.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Ivo\\.nuget\\packages\\stylecop.analyzers\\1.2.0-beta.205\\stylecop.analyzers.1.2.0-beta.205.nupkg.sha512",
     "C:\\Users\\Ivo\\.nuget\\packages\\stylecop.analyzers.unstable\\1.2.0.205\\stylecop.analyzers.unstable.1.2.0.205.nupkg.sha512"
