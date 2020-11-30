@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "0bckN9gKMcRsrESWt2zMgq+uSpCaaQUryUSAdRJb8rLXPWHZAkWKb2t0iIUyN99oWKY8rDGS6eYeXCSUdjc3hg==",
+  "dgSpecHash": "lxXDE7DttbbLfv4/wLBWAk8OLqOcCcEbnyzAqTX/wTRfWbEp7SrQoN/wVupuY437Uw+qT5CONKZvfwJugMEaGA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Ivo\\Desktop\\VERI IMPROTA STUF\\prp\\Properties4Sale-main\\Web\\Properties4Sale.Web\\Properties4Sale.Web.csproj",
+  "projectFilePath": "C:\\Users\\Ivo\\Desktop\\VERI IMPROTA STUF\\Properties4Sale\\Properties4Sale\\Web\\Properties4Sale.Web\\Properties4Sale.Web.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Ivo\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\Ivo\\.nuget\\packages\\bootstrap\\4.5.3\\bootstrap.4.5.3.nupkg.sha512",

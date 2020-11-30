@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "YbIxoH/TJb6bCah6BSkLhiX2GMRCiXdqKHZAp9TvP55uAu7KiYZ1Vm3D/BhM4EC4XfAVzt7JeW8J8ZhdxlOkCw==",
+  "dgSpecHash": "zRH0l/wSVYHtRSBbFRVlMy92jow3znPQUqOUVrvckA6EBZUYYHZ2pt2QOlD5FzOLG+vTUPTi2fbum9N/bBU4QA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Ivo\\Desktop\\VERI IMPROTA STUF\\prp\\Properties4Sale-main\\Tests\\Properties4Sale.Services.Data.Tests\\Properties4Sale.Services.Data.Tests.csproj",
+  "projectFilePath": "C:\\Users\\Ivo\\Desktop\\VERI IMPROTA STUF\\Properties4Sale\\Properties4Sale\\Tests\\Properties4Sale.Services.Data.Tests\\Properties4Sale.Services.Data.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Ivo\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\Ivo\\.nuget\\packages\\castle.core\\4.4.0\\castle.core.4.4.0.nupkg.sha512",
