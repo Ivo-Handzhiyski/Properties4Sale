@@ -22,6 +22,14 @@
 
         public string TypeOfPropertyName { get; set; }
 
+        public string Area { get; set; }
+
+        public int Beds { get; set; }
+
+        public int Baths { get; set; }
+
+        public int Garages { get; set; }
+
         public void CreateMappings(IProfileExpression configuration)
         {
             configuration.CreateMap<Property, VisualisePropertiesViewModel>()

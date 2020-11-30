@@ -20,6 +20,14 @@
 
         public int Price { get; set; }
 
+        public string Area { get; set; }
+
+        public int Beds { get; set; }
+
+        public int Baths { get; set; }
+
+        public int Garages { get; set; }
+
         public string AddedByUserId { get; set; }
 
         public virtual ApplicationUser AddedByUser { get; set; }

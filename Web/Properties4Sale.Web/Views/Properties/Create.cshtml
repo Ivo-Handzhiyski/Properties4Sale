@@ -1,10 +1,42 @@
 ﻿@model Properties4Sale.Web.ViewModels.Property.CreatePropertyInputModel
-@{
-    ViewData["Title"] = "Create new property";
-    var TypeOfPropertiesItems = this.Model.TypeOfPropertiesItems.Select(x => new SelectListItem(x.Value, x.Key));
-}
+@{ ViewData["Title"] = "Create new property";
+                var TypeOfPropertiesItems = this.Model.TypeOfPropertiesItems.Select(x => new SelectListItem(x.Value, x.Key)); }
 
-<h1>Create</h1>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>EstateAgency Bootstrap Template - Index</title>
+    <meta content="" name="descriptison">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="~/ass/img/favicon.png" rel="icon">
+    <link href="~/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="~/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="~/assets/vendor/ionicons/css/ionicons.min.css" rel="stylesheet">
+    <link href="~/assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+    <link href="~/assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="~/assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="~/assets/css/style.css" rel="stylesheet">
+
+    <!-- =======================================================
+    * Template Name: EstateAgency - v2.1.0
+    * Template URL: https://bootstrapmade.com/real-estate-agency-bootstrap-template/
+    * Author: BootstrapMade.com
+    * License: https://bootstrapmade.com/license/
+    ======================================================== -->
+</head>
 
 <form method="post" enctype="multipart/form-data">
     <div asp-validation-summary="All" class="text-danger"></div>
@@ -29,6 +61,26 @@
         <span asp-validation-for="Price" class="text-danger"></span>
     </div>
     <div class="form-group">
+        <label asp-for="Area"></label>
+        <input asp-for="Area" class="form-control" />
+        <span asp-validation-for="Area" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Beds"></label>
+        <input asp-for="Beds" class="form-control" />
+        <span asp-validation-for="Beds" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Baths"></label>
+        <input asp-for="Baths" class="form-control" />
+        <span asp-validation-for="Baths" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Garages"></label>
+        <input asp-for="Garages" class="form-control" />
+        <span asp-validation-for="Garages" class="text-danger"></span>
+    </div>
+    <div class="form-group">
         <label asp-for="TypeOfPropertyId">Type Of Property</label>
         <select asp-for="TypeOfPropertyId" class="form-control" asp-items="TypeOfPropertiesItems"></select>
         <span asp-validation-for="TypeOfPropertyId" class="text-danger"></span>
@@ -42,4 +94,19 @@
     <input type="submit" class="btn-primary" />
 
 </form>
+
+<a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+<div id="preloader"></div>
+
+<!-- Vendor JS Files -->
+<script src="~/assets/vendor/jquery/jquery.min.js"></script>
+<script src="~/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="~/assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+<script src="~/assets/vendor/php-email-form/validate.js"></script>
+<script src="~/assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+<script src="~/assets/vendor/scrollreveal/scrollreveal.min.js"></script>
+
+<!-- Template Main JS File -->
+<script src="~/assets/js/main.js"></script>
+
 

@@ -11,21 +11,21 @@
 
         public int Id { get; set; }
 
-        public int Bedrooms { get; set; }
+        public bool HeatingSystem { get; set; }
 
-        public int Floors { get; set; }
+        public bool Garden { get; set; }
 
-        public string HeatingSystem { get; set; }
+        public bool Furnishing { get; set; }
 
-        public string Garden { get; set; }
+        public bool Basement { get; set; }
 
-        public int Area { get; set; }
+        public bool Balcony { get; set; }
 
-        public string Condition { get; set; }
+        public bool CarGarage { get; set; }
 
-        public string Furnishing { get; set; }
+        public bool Parking { get; set; }
 
-        public int YearOfConstruction { get; set; }
+        public bool StunningView { get; set; }
 
         public virtual ICollection<PropertyFeature> Properties { get; set; }
     }

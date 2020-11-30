@@ -23,6 +23,15 @@
 
         public int Price { get; set; }
 
+        [Required]
+        public string Area { get; set; }
+
+        public int Beds { get; set; }
+
+        public int Baths { get; set; }
+
+        public int Garages { get; set; }
+
         public int TypeOfPropertyId { get; set; }
 
         public IEnumerable<IFormFile> Images { get; set; }

@@ -36,6 +36,10 @@
                 Description = input.Description,
                 Location = input.Location,
                 Price = input.Price,
+                Area = input.Area,
+                Baths = input.Baths,
+                Beds = input.Beds,
+                Garages = input.Garages,
                 AddedByUserId = userId,
             };
 

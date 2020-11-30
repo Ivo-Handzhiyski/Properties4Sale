@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "r1hHduXwKVMPi73+ZX9SNRtidvYV3cR1vzILBQM+r1GUsXpZ8KmrV5ZvsN9EYAz1AEEIhPvReFDquLMaWAjsXg==",
+  "dgSpecHash": "6XRj71Lxt2Ue0KtdC2gnUgkW/mUgB7F+zfT/hgF5yOQI2lb49Pv0rj0oEm1M1f1flVRe+LbFgvT/T9yara8BKw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Ivo\\Desktop\\VERI IMPROTA STUF\\Properties4Sale\\Properties4Sale\\Tests\\Sandbox\\Sandbox.csproj",
+  "projectFilePath": "C:\\Users\\Ivo\\Desktop\\VERI IMPROTA STUF\\prp\\Properties4Sale-main\\Tests\\Sandbox\\Sandbox.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Ivo\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\Ivo\\.nuget\\packages\\commandlineparser\\2.8.0\\commandlineparser.2.8.0.nupkg.sha512",

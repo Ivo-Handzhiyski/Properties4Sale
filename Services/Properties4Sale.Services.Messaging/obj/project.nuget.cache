@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "RFRjR8KWmVm0dSmWG4/BDs8gOdtxI5VwS7YKiUq8V+dKR0hdm6qNz+PdCsWGJBnf/t9VOKvPRBed+hcMnq5wUA==",
+  "dgSpecHash": "Fyj0T0xOY5HELsn1/EnHltEV9aJ9h1Z59cBW5Em6yUjCqQV/YEZSxB5FKJwKeRf5ptL70X3Ku0dVyZp4zGs0kw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Ivo\\Desktop\\VERI IMPROTA STUF\\Properties4Sale\\Properties4Sale\\Services\\Properties4Sale.Services.Messaging\\Properties4Sale.Services.Messaging.csproj",
+  "projectFilePath": "C:\\Users\\Ivo\\Desktop\\VERI IMPROTA STUF\\prp\\Properties4Sale-main\\Services\\Properties4Sale.Services.Messaging\\Properties4Sale.Services.Messaging.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Ivo\\.nuget\\packages\\microsoft.csharp\\4.0.1\\microsoft.csharp.4.0.1.nupkg.sha512",
     "C:\\Users\\Ivo\\.nuget\\packages\\microsoft.netcore.platforms\\1.0.1\\microsoft.netcore.platforms.1.0.1.nupkg.sha512",
