@@ -11,7 +11,7 @@
 
         public bool HasPreviousPage => this.PageNumber > 1;
 
-        public bool HasNextPage => this.PagesCount < this.PagesCount; 
+        public bool HasNextPage => this.PagesCount < this.PagesCount;
 
         public int PagesCount => (int)Math.Ceiling((double)this.PropertiesCount / this.ItemsPerPage);
 

@@ -60,7 +60,6 @@
             }
             catch (Exception ex)
             {
-
                 this.ModelState.AddModelError(string.Empty, ex.Message);
                 input.TypeOfPropertiesItems = this.typeOfPropertiesService.GetAllKeyValuePairs();
                 return this.View(input);
@@ -82,9 +81,10 @@
             return this.View(viewModel);
         }
 
-        public IActionResult ById()
+        public IActionResult ById(int id)
         {
-            return this.View();
+            var property = this.propertiesService.GetById<PropertiesDetailsViewModel>(id);
+            return this.View(property);
         }
     }
 }

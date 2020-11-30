@@ -84,6 +84,14 @@
             return recipes;
         }
 
+        public T GetById<T>(int id)
+        {
+            var property = this.propertiesRepository.AllAsNoTracking().Where(x => x.Id == id)
+            .To<T>().FirstOrDefault();
+
+            return property;
+        }
+
         public int GetCount()
         {
             return this.propertiesRepository.All().Count();
