@@ -43,7 +43,7 @@
 
         public void CreateMappings(IProfileExpression configuration)
         {
-            configuration.CreateMap<Property, VisualisePropertiesViewModel>()
+            configuration.CreateMap<Property, PropertiesDetailsViewModel>()
                 .ForMember(x => x.ImageUrl, opt => opt.MapFrom(x =>
                         x.Images.FirstOrDefault().RemoteImageUrl != null ?
                         x.Images.FirstOrDefault().RemoteImageUrl :

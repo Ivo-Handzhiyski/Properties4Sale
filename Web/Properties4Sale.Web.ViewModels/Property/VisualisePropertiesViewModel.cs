@@ -16,6 +16,8 @@
 
         public string Description { get; set; }
 
+        public string Location { get; set; }
+
         public int Price { get; set; }
 
         public int TypeOfPropertyId { get; set; }
