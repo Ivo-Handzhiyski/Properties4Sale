@@ -43,6 +43,11 @@
                 AddedByUserId = userId,
             };
 
+            foreach (var propertyFeature in input.Features)
+            {
+               
+            }
+
             var allowedExtensions = new[] { "jpg", "png", "gif" };
 
             Directory.CreateDirectory($"{imagePath}/properties");
