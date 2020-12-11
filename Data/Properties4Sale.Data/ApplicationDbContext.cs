@@ -33,6 +33,10 @@
 
         public DbSet<PropertyFeature> PropertyFeatures { get; set; }
 
+        public DbSet<Blog> Blogs { get; set; }
+
+        public DbSet<Comment> Comments { get; set; }
+
         public override int SaveChanges() => this.SaveChanges(true);
 
         public override int SaveChanges(bool acceptAllChangesOnSuccess)

@@ -56,13 +56,13 @@
                         <nav aria-label="breadcrumb" class="breadcrumb-box d-flex justify-content-lg-end">
                             <ol class="breadcrumb">
                                 <li class="breadcrumb-item">
-                                    <a href="index.html">Home</a>
+                                    <a asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                                 </li>
                                 <li class="breadcrumb-item">
-                                    <a href="property-grid.html">Properties</a>
+                                    <a asp-area="" asp-controller="Properties" asp-action="All">Properties</a>
                                 </li>
                                 <li class="breadcrumb-item active" aria-current="page">
-                                    304 Blaster Up
+                                    @this.Model.Name
                                 </li>
                             </ol>
                         </nav>
@@ -76,6 +76,7 @@
                 <div class="row">
                     <div class="col-sm-12">
                         <div id="property-single-carousel" class="owl-carousel owl-arrow gallery-property">
+
                             <div class="carousel-item-b">
                                 <img src="~/assets/img/slide-2.jpg" alt="">
                             </div>

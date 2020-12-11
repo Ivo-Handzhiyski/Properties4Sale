@@ -43,11 +43,6 @@
                 AddedByUserId = userId,
             };
 
-            foreach (var propertyFeature in input.Features)
-            {
-               
-            }
-
             var allowedExtensions = new[] { "jpg", "png", "gif" };
 
             Directory.CreateDirectory($"{imagePath}/properties");
@@ -100,6 +95,13 @@
         public int GetCount()
         {
             return this.propertiesRepository.All().Count();
+        }
+
+        public IEnumerable<T> GetProperties<T>(int count)
+        {
+            var property = this.propertiesRepository.All().Take(count).To<T>().ToList();
+
+            return property;
         }
     }
 }

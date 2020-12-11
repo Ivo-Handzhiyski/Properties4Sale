@@ -10,14 +10,19 @@
     using Properties4Sale.Services.Data;
     using Properties4Sale.Web.ViewModels;
     using Properties4Sale.Web.ViewModels.Home;
+    using Properties4Sale.Web.ViewModels.Property;
 
     public class HomeController : BaseController
     {
         private readonly IGetCountService countService;
+        private readonly IPropertiesService propertiesService;
 
-        public HomeController(IGetCountService countService)
+        public HomeController(
+            IGetCountService countService,
+            IPropertiesService propertiesService)
         {
             this.countService = countService;
+            this.propertiesService = propertiesService;
         }
 
         public IActionResult Index()
@@ -27,8 +32,8 @@
             {
                 PropertiesCount = counts.PropertiesCount,
                 TypesOfPropertiesCount = counts.TypesOfPropertiesCount,
+                VisualiseProperties = this.propertiesService.GetProperties<IndexPropertyVisualizerViewModel>(3),
             };
-
             return this.View(viewModel);
         }
 
