@@ -1,14 +1,17 @@
 ﻿namespace Properties4Sale.Web.ViewModels.Property
 {
-    using System;
     using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
-    using System.Text;
+    using System.Linq;
 
-    using Microsoft.AspNetCore.Http;
+    using AutoMapper;
+    using Properties4Sale.Data.Models;
+    using Properties4Sale.Services.Mapping;
 
-    public class CreatePropertyInputModel
+    public class EditPropertyInputModel : IMapFrom<Property>
     {
+        public int Id { get; set; }
+
         [Required]
         [MinLength(4)]
         public string Name { get; set; }
@@ -36,10 +39,6 @@
         public int Garages { get; set; }
 
         public int TypeOfPropertyId { get; set; }
-
-        public IEnumerable<IFormFile> Images { get; set; }
-
-        public IEnumerable<PropertyFeatureInputModel> Features { get; set; }
 
         public IEnumerable<KeyValuePair<string, string>> TypeOfPropertiesItems { get; set; }
     }

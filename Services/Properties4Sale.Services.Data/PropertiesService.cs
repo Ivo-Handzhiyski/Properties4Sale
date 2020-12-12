@@ -99,9 +99,32 @@
 
         public IEnumerable<T> GetProperties<T>(int count)
         {
-            var property = this.propertiesRepository.All().Take(count).To<T>().ToList();
+            var property = this.propertiesRepository.All().OrderByDescending(x => x.Id).Take(count).To<T>().ToList();
 
             return property;
+        }
+
+        public IEnumerable<T> GetPropertiesRandom<T>(int count)
+        {
+            var property = this.propertiesRepository.All().OrderBy(x => Guid.NewGuid()).Take(count).To<T>().ToList();
+
+            return property;
+        }
+
+        public async Task UpdateAsync(int id, EditPropertyInputModel input)
+        {
+            var property = this.propertiesRepository.All().FirstOrDefault(x => x.Id == id);
+            property.Name = input.Name;
+            property.Description = input.Description;
+            property.Location = input.Location;
+            property.Price = input.Price;
+            property.Area = input.Area;
+            property.Baths = input.Baths;
+            property.Beds = input.Beds;
+            property.Garages = input.Garages;
+            property.TypeOfPropertyId = input.TypeOfPropertyId;
+
+            await this.propertiesRepository.SaveChangesAsync();
         }
     }
 }

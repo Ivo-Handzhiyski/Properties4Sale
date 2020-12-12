@@ -32,7 +32,7 @@
             {
                 PropertiesCount = counts.PropertiesCount,
                 TypesOfPropertiesCount = counts.TypesOfPropertiesCount,
-                VisualiseProperties = this.propertiesService.GetProperties<IndexPropertyVisualizerViewModel>(3),
+                VisualiseProperties = this.propertiesService.GetProperties<IndexPropertyVisualizerViewModel>(5),
             };
             return this.View(viewModel);
         }

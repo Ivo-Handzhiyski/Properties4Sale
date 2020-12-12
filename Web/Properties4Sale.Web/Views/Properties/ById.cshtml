@@ -38,7 +38,7 @@
 <body>
 
   
-
+        
 
     <main id="main">
 
@@ -52,6 +52,7 @@
                             <span class="color-text-a">@this.Model.Location</span>
                         </div>
                     </div>
+                   
                     <div class="col-md-12 col-lg-4">
                         <nav aria-label="breadcrumb" class="breadcrumb-box d-flex justify-content-lg-end">
                             <ol class="breadcrumb">
@@ -66,6 +67,8 @@
                                 </li>
                             </ol>
                         </nav>
+                        <a asp-action="Edit" asp-route-id="@this.Model.Id" class="btn btn-success w-25">Edit</a>
+                        <a asp-action="Delete" asp-route-id="@this.Model.Id" class="btn btn-danger w-25">Delete</a>
                     </div>
                 </div>
             </div>

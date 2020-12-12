@@ -68,6 +68,29 @@
             return this.Redirect("/");
         }
 
+        [Authorize]
+        public IActionResult Edit(int id)
+        {
+            var inputModel = this.propertiesService.GetById<EditPropertyInputModel>(id);
+            inputModel.TypeOfPropertiesItems = this.typeOfPropertiesService.GetAllKeyValuePairs();
+            return this.View(inputModel);
+        }
+
+        [Authorize]
+        [HttpPost]
+        public async Task<IActionResult> Edit(int id, EditPropertyInputModel property)
+        {
+            if (!this.ModelState.IsValid)
+            {
+                property.TypeOfPropertiesItems = this.typeOfPropertiesService.GetAllKeyValuePairs();
+                return this.View();
+            }
+
+            await this.propertiesService.UpdateAsync(id, property);
+
+            return this.RedirectToAction("ById", new { id = id });
+        }
+
         public IActionResult All(int id = 1)
         {
             const int ItemsPerPage = 12;

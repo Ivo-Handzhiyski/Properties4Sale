@@ -15,8 +15,12 @@
 
         IEnumerable<T> GetProperties<T>(int count);
 
+        IEnumerable<T> GetPropertiesRandom<T>(int count);
+
         int GetCount();
 
         T GetById<T>(int id);
+
+        Task UpdateAsync(int id, EditPropertyInputModel input);
     }
 }
