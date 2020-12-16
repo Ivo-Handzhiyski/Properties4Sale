@@ -106,11 +106,10 @@
                 </div>
             </form>
         </div>
-    </div><!-- End Property Search Section -->>
+    </div><!-- End Property Search Section -->
 
     <!-- ======= Header/Navbar ======= -->
     <nav class="navbar navbar-default navbar-trans navbar-expand-lg fixed-top">
-        <div class="container">
             <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault" aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
                 <span></span>
                 <span></span>
@@ -131,9 +130,6 @@
                     <li class="nav-item">
                         <a class="nav-link" asp-area="" asp-controller="ContactUs" asp-action="Index">Contact us</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" asp-area="" asp-controller="Properties" asp-action="All">All Properties</a>
-                    </li>
                     @if (this.User.Identity.IsAuthenticated)
                     {
                         <li class="nav-item">
@@ -141,6 +137,16 @@
                         </li>
 
                     }
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" asp-area="" asp-controller="Properties" asp-action="All">All Properties</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" asp-area="" asp-controller="Blog" asp-action="Create">Create a Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" asp-area="" asp-controller="Blog" asp-action="All">All Blogs</a>
+                    </li>
+
                     @if (this.SignInManager.IsSignedIn(this.User))
                     {
                         if (this.User.IsInRole(GlobalConstants.AdministratorRoleName))
@@ -170,7 +176,6 @@
             <button type="button" class="btn btn-b-n navbar-toggle-box-collapse d-none d-md-block" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-expanded="false">
                 <span class="fa fa-search" aria-hidden="true"></span>
             </button>
-        </div>
     </nav><!-- End Header/Navbar -->
  
         <partial name="_CookieConsentPartial" />

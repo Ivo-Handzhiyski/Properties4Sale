@@ -3,6 +3,7 @@
     using System;
     using System.Collections.Generic;
     using System.Linq;
+    using System.Security.Claims;
     using System.Threading.Tasks;
 
     using Microsoft.AspNetCore.Authorization;
@@ -71,8 +72,10 @@
         [Authorize]
         public IActionResult Edit(int id)
         {
+
             var inputModel = this.propertiesService.GetById<EditPropertyInputModel>(id);
             inputModel.TypeOfPropertiesItems = this.typeOfPropertiesService.GetAllKeyValuePairs();
+
             return this.View(inputModel);
         }
 
@@ -91,9 +94,10 @@
             return this.RedirectToAction("ById", new { id = id });
         }
 
-        public IActionResult All(int id = 1)
+        public IActionResult All(string sortOrder, int id = 1)
         {
-            const int ItemsPerPage = 12;
+            const int ItemsPerPage = 6;
+
             var viewModel = new PropertiesListViewModel
             {
                 ItemsPerPage = ItemsPerPage,
@@ -108,6 +112,14 @@
         {
             var property = this.propertiesService.GetById<PropertiesDetailsViewModel>(id);
             return this.View(property);
+        }
+
+        [HttpPost]
+
+        public async Task<IActionResult> Delete(int id)
+        {
+            await this.propertiesService.DeleteAsync(id);
+            return this.RedirectToAction(nameof(this.All));
         }
     }
 }

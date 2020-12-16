@@ -21,6 +21,10 @@
         [MinLength(3)]
         public string Location { get; set; }
 
+        [Required]
+        [MinLength(5)]
+        public string Address { get; set; }
+
         public int Price { get; set; }
 
         [Required]

@@ -1,4 +1,5 @@
 ﻿@model Properties4Sale.Web.ViewModels.Property.PropertiesDetailsViewModel
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -37,8 +38,8 @@
 
 <body>
 
-  
-        
+
+
 
     <main id="main">
 
@@ -52,7 +53,7 @@
                             <span class="color-text-a">@this.Model.Location</span>
                         </div>
                     </div>
-                   
+
                     <div class="col-md-12 col-lg-4">
                         <nav aria-label="breadcrumb" class="breadcrumb-box d-flex justify-content-lg-end">
                             <ol class="breadcrumb">
@@ -67,8 +68,15 @@
                                 </li>
                             </ol>
                         </nav>
+
                         <a asp-action="Edit" asp-route-id="@this.Model.Id" class="btn btn-success w-25">Edit</a>
-                        <a asp-action="Delete" asp-route-id="@this.Model.Id" class="btn btn-danger w-25">Delete</a>
+                        <button class="btn btn-danger w-25" data-toggle="modal" data-target="#deleteModal">
+                            Delete
+                        </button>
+                        <form asp-action="Delete" asp-route-id="@this.Model.Id" id="deleteForm"></form>
+
+
+
                     </div>
                 </div>
             </div>
@@ -79,15 +87,8 @@
                 <div class="row">
                     <div class="col-sm-12">
                         <div id="property-single-carousel" class="owl-carousel owl-arrow gallery-property">
-
-                            <div class="carousel-item-b">
-                                <img src="~/assets/img/slide-2.jpg" alt="">
-                            </div>
-                            <div class="carousel-item-b">
-                                <img src="~/assets/img/slide-3.jpg" alt="">
-                            </div>
-                            <div class="carousel-item-b">
-                                <img src="~/assets/img/slide-1.jpg" alt="">>
+                            <div class="carousel-item-b img-a">
+                                <img src=@this.Model.ImageUrl alt="">
                             </div>
                         </div>
                         <div class="row justify-content-between">
@@ -111,10 +112,10 @@
                                         </div>
                                     </div>
                                     <div class="summary-list">
-                                        <ul class="list">                                           
+                                        <ul class="list">
                                             <li class="d-flex justify-content-between">
-                                                <strong>Location:</strong>
-                                                <span>Chicago, IL 606543</span>
+                                                <strong>Address:</strong>
+                                                <span>@this.Model.Address</span>
                                             </li>
                                             <li class="d-flex justify-content-between">
                                                 <strong>Property Type:</strong>
@@ -289,6 +290,26 @@
 
     <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
     <div id="preloader"></div>
+
+    <div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Delete Property</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Do you want to delete?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
+                    <button type="button" class="btn btn-primary" onclick="deleteForm.submit()">Yes</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Vendor JS Files -->
     <script src="~/assets/vendor/jquery/jquery.min.js"></script>

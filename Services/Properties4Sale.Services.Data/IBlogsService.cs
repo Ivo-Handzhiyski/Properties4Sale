@@ -1,13 +1,10 @@
 ﻿namespace Properties4Sale.Services.Data
 {
-    using System;
+    using Properties4Sale.Web.ViewModels.Property;
     using System.Collections.Generic;
-    using System.Text;
     using System.Threading.Tasks;
 
-    using Properties4Sale.Web.ViewModels.Property;
-
-    public interface IPropertiesService
+    public interface IBlogsService
     {
         Task CreateAsync(CreatePropertyInputModel input, string userId, string imagePath);
 
@@ -22,7 +19,5 @@
         T GetById<T>(int id);
 
         Task UpdateAsync(int id, EditPropertyInputModel input);
-
-        Task DeleteAsync(int id);
     }
 }

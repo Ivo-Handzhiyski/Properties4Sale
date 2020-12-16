@@ -41,6 +41,7 @@
                 Beds = input.Beds,
                 Garages = input.Garages,
                 AddedByUserId = userId,
+                Address = input.Address,
             };
 
             var allowedExtensions = new[] { "jpg", "png", "gif" };
@@ -73,15 +74,22 @@
             await this.propertiesRepository.SaveChangesAsync();
         }
 
-        public IEnumerable<T> GetAll<T>(int page, int itemsPerPage = 12)
+        public async Task DeleteAsync(int id)
         {
-            var recipes = this.propertiesRepository.AllAsNoTracking()
+            var property = this.propertiesRepository.All().FirstOrDefault(x => x.Id == id);
+            this.propertiesRepository.Delete(property);
+            await this.propertiesRepository.SaveChangesAsync();
+        }
+
+        public IEnumerable<T> GetAll<T>(int page, int itemsPerPage = 6)
+        {
+            var properties = this.propertiesRepository.AllAsNoTracking()
              .OrderByDescending(x => x.Id)
              .Skip((page - 1) * itemsPerPage).Take(itemsPerPage)
              .To<T>()
              .ToList();
 
-            return recipes;
+            return properties;
         }
 
         public T GetById<T>(int id)
@@ -123,6 +131,7 @@
             property.Beds = input.Beds;
             property.Garages = input.Garages;
             property.TypeOfPropertyId = input.TypeOfPropertyId;
+            property.Address = input.Address;
 
             await this.propertiesRepository.SaveChangesAsync();
         }

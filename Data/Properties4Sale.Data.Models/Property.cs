@@ -18,6 +18,8 @@
 
         public string Location { get; set; }
 
+        public string Address { get; set; }
+
         public int Price { get; set; }
 
         public string Area { get; set; }

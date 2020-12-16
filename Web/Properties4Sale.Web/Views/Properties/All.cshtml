@@ -71,12 +71,12 @@
                 <div class="row">
                     <div class="col-sm-12">
                         <div class="grid-option">
-                            <form>
+                            <form asp-controller="Properties" asp-action="All">
                                 <select class="custom-select">
                                     <option selected>All</option>
-                                    <option value="1">New to Old</option>
-                                    <option value="2">For Rent</option>
-                                    <option value="3">For Sale</option>
+                                    <option value="DescPrice">Desc. Price</option>
+                                    <option value="OldToNew">Old to new</option>
+                                    <option value="NewToOld">New to old</option>
                                 </select>
                             </form>
                         </div>

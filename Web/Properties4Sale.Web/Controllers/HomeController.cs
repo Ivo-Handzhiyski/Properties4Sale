@@ -33,6 +33,7 @@
                 PropertiesCount = counts.PropertiesCount,
                 TypesOfPropertiesCount = counts.TypesOfPropertiesCount,
                 VisualiseProperties = this.propertiesService.GetProperties<IndexPropertyVisualizerViewModel>(5),
+                VisualisePropertiesRandom = this.propertiesService.GetPropertiesRandom<IndexPropertyVisualizerViewModel>(5),
             };
             return this.View(viewModel);
         }

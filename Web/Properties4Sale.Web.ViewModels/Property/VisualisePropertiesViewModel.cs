@@ -1,5 +1,6 @@
 ﻿namespace Properties4Sale.Web.ViewModels.Property
 {
+    using System.Collections.Generic;
     using System.Linq;
 
     using AutoMapper;
@@ -18,6 +19,8 @@
 
         public string Location { get; set; }
 
+        public string Address { get; set; }
+
         public int Price { get; set; }
 
         public int TypeOfPropertyId { get; set; }
@@ -31,6 +34,8 @@
         public int Baths { get; set; }
 
         public int Garages { get; set; }
+
+        public virtual ICollection<Image> Images { get; set; }
 
         public void CreateMappings(IProfileExpression configuration)
         {

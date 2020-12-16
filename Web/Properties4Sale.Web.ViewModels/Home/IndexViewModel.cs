@@ -11,5 +11,7 @@
         public int TypesOfPropertiesCount { get; set; }
 
         public IEnumerable<IndexPropertyVisualizerViewModel> VisualiseProperties { get; set; }
+
+        public IEnumerable<IndexPropertyVisualizerViewModel> VisualisePropertiesRandom { get; set; }
     }
 }
