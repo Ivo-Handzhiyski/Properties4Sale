@@ -1,8 +1,9 @@
 ﻿namespace Properties4Sale.Data.Models
 {
-    using Properties4Sale.Data.Common.Models;
     using System;
     using System.Collections.Generic;
+
+    using Properties4Sale.Data.Common.Models;
 
     public class Blog : BaseDeletableModel<int>
     {

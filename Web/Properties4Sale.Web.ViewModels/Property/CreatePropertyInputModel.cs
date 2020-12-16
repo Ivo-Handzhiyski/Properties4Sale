@@ -43,7 +43,7 @@
 
         public IEnumerable<IFormFile> Images { get; set; }
 
-        public IEnumerable<PropertyFeatureInputModel> Features { get; set; }
+        public IEnumerable<PropertyFeaturesViewModel> Features { get; set; }
 
         public IEnumerable<KeyValuePair<string, string>> TypeOfPropertiesItems { get; set; }
     }

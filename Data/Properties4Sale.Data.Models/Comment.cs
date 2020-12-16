@@ -1,7 +1,8 @@
 ﻿namespace Properties4Sale.Data.Models
 {
-    using Properties4Sale.Data.Common.Models;
     using System;
+
+    using Properties4Sale.Data.Common.Models;
 
     public class Comment : BaseDeletableModel<int>
     {

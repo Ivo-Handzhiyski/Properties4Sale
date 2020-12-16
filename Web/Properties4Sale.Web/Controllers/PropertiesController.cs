@@ -72,7 +72,6 @@
         [Authorize]
         public IActionResult Edit(int id)
         {
-
             var inputModel = this.propertiesService.GetById<EditPropertyInputModel>(id);
             inputModel.TypeOfPropertiesItems = this.typeOfPropertiesService.GetAllKeyValuePairs();
 

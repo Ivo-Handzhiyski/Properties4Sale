@@ -1,8 +1,9 @@
 ﻿namespace Properties4Sale.Services.Data
 {
-    using Properties4Sale.Web.ViewModels.Property;
     using System.Collections.Generic;
     using System.Threading.Tasks;
+
+    using Properties4Sale.Web.ViewModels.Property;
 
     public interface IBlogsService
     {
