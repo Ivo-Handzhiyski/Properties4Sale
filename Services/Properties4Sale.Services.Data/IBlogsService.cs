@@ -3,22 +3,21 @@
     using System.Collections.Generic;
     using System.Threading.Tasks;
 
+    using Properties4Sale.Web.ViewModels.Blog;
     using Properties4Sale.Web.ViewModels.Property;
 
     public interface IBlogsService
     {
-        Task CreateAsync(CreatePropertyInputModel input, string userId, string imagePath);
+        Task CreateAsync(CreateBlogInputModel input, string userId);
 
         IEnumerable<T> GetAll<T>(int page, int itemsPerPage = 12);
 
-        IEnumerable<T> GetProperties<T>(int count);
-
-        IEnumerable<T> GetPropertiesRandom<T>(int count);
-
-        int GetCount();
+        IEnumerable<T> GetBlogs<T>(int count);
 
         T GetById<T>(int id);
 
         Task UpdateAsync(int id, EditPropertyInputModel input);
+
+        Task DeleteAsync(int id);
     }
 }

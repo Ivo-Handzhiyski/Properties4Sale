@@ -24,6 +24,10 @@
 
         public string Description { get; set; }
 
+        public string AddedByUserId { get; set; }
+
+        public virtual ApplicationUser AddedByUser { get; set; }
+
         public ICollection<Comment> Comments { get; set; }
     }
 }

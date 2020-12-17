@@ -10,8 +10,8 @@ using Properties4Sale.Data;
 namespace Properties4Sale.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20201214091656_ChangedProperties")]
-    partial class ChangedProperties
+    [Migration("20201217155433_InitialCreate")]
+    partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -252,6 +252,9 @@ namespace Properties4Sale.Data.Migrations
                         .HasColumnType("int")
                         .UseIdentityColumn();
 
+                    b.Property<string>("AddedByUserId")
+                        .HasColumnType("nvarchar(450)");
+
                     b.Property<string>("Author")
                         .HasColumnType("nvarchar(max)");
 
@@ -283,6 +286,8 @@ namespace Properties4Sale.Data.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("AddedByUserId");
 
                     b.HasIndex("IsDeleted");
 
@@ -568,6 +573,15 @@ namespace Properties4Sale.Data.Migrations
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
+                });
+
+            modelBuilder.Entity("Properties4Sale.Data.Models.Blog", b =>
+                {
+                    b.HasOne("Properties4Sale.Data.Models.ApplicationUser", "AddedByUser")
+                        .WithMany()
+                        .HasForeignKey("AddedByUserId");
+
+                    b.Navigation("AddedByUser");
                 });
 
             modelBuilder.Entity("Properties4Sale.Data.Models.Comment", b =>

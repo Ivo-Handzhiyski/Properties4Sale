@@ -4,14 +4,17 @@
     using System.Collections.Generic;
     using System.Linq;
     using System.Security.Claims;
+    using System.Text;
     using System.Threading.Tasks;
 
     using Microsoft.AspNetCore.Authorization;
     using Microsoft.AspNetCore.Hosting;
     using Microsoft.AspNetCore.Identity;
+    using Microsoft.AspNetCore.Identity.UI.Services;
     using Microsoft.AspNetCore.Mvc;
     using Properties4Sale.Data.Models;
     using Properties4Sale.Services.Data;
+    using Properties4Sale.Services.Messaging;
     using Properties4Sale.Web.ViewModels.Property;
 
     public class PropertiesController : Controller
@@ -20,17 +23,20 @@
         private readonly IPropertiesService propertiesService;
         private readonly UserManager<ApplicationUser> userManager;
         private readonly IWebHostEnvironment environment;
+        private readonly Services.Messaging.IEmailSender emailSender;
 
         public PropertiesController(
             ITypeOfPropertiesService typeOfPropertiesService,
             IPropertiesService propertiesService,
             UserManager<ApplicationUser> userManager,
-            IWebHostEnvironment environment)
+            IWebHostEnvironment environment,
+            Services.Messaging.IEmailSender emailSender)
         {
             this.typeOfPropertiesService = typeOfPropertiesService;
             this.propertiesService = propertiesService;
             this.userManager = userManager;
             this.environment = environment;
+            this.emailSender = emailSender;
         }
 
         [Authorize]
@@ -119,6 +125,18 @@
         {
             await this.propertiesService.DeleteAsync(id);
             return this.RedirectToAction(nameof(this.All));
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> SendToEmail(int id)
+        {
+            var property = this.propertiesService.GetById<VisualisePropertiesViewModel>(id);
+            var html = new StringBuilder();
+            html.AppendLine($"<h1>{property.Name}</h1>");
+            html.AppendLine($"<h3>{property.Price}</h3>");
+            html.AppendLine($"<img src=\"{property.ImageUrl}\" />");
+            await this.emailSender.SendEmailAsync("Properties4Sale@lol.com", "Properties4Sale", "dotoksurvival@gmail.com", property.Name, html.ToString());
+            return this.RedirectToAction(nameof(this.ById), new { id });
         }
     }
 }
