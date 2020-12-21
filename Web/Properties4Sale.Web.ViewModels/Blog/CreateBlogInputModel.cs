@@ -10,12 +10,16 @@
     public class CreateBlogInputModel
     {
         [Required]
+        [MinLength(3)]
+
         public string Name { get; set; }
 
         [Required]
+        [MinLength(3)]
         public string SubName { get; set; }
 
         [Required]
+        [MinLength(3)]
         public string Author { get; set; }
 
         [Required]
@@ -25,8 +29,11 @@
         public DateTime Date { get; set; }
 
         [Required]
+        [MinLength(10)]
         public string Description { get; set; }
 
         public ICollection<Comment> Comment { get; set; }
+
+        public ICollection<IFormFile> BlogImages { get; set; }
     }
 }

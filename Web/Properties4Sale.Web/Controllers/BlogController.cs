@@ -52,7 +52,7 @@
 
             try
             {
-                await this.blogsService.CreateAsync(input, user.Id);
+                await this.blogsService.CreateAsync(input, user.Id, $"{this.environment.WebRootPath}/images");
             }
             catch (Exception ex)
             {
@@ -64,9 +64,55 @@
             return this.Redirect("/");
         }
 
-        public IActionResult All()
+        public IActionResult All(int id = 1)
         {
-            return this.View();
+            const int itemsPerPage = 6;
+
+            var viewModel = new BlogListViewModel
+            {
+                ItemsPerPage = itemsPerPage,
+                PageNumber = id,
+                BlogsCount = this.blogsService.GetCount(),
+                Blogs = this.blogsService.GetAll<VisualizeBlogViewModel>(id, itemsPerPage),
+            };
+
+            return this.View(viewModel);
+        }
+
+        public IActionResult ById(int id)
+        {
+            var blog = this.blogsService.GetById<BlogDetailsViewModel>(id);
+
+            return this.View(blog);
+        }
+
+        public IActionResult Edit(int id)
+        {
+            var inputModel = this.blogsService.GetById<EditBlogInputModel>(id);
+
+            return this.View(inputModel);
+        }
+
+        [Authorize]
+        [HttpPost]
+        public async Task<IActionResult> Edit(int id, EditBlogInputModel property)
+        {
+            if (!this.ModelState.IsValid)
+            {
+                return this.View();
+            }
+
+            await this.blogsService.UpdateAsync(id, property);
+
+            return this.RedirectToAction("ById", new { id = id });
+        }
+
+        [HttpPost]
+        [Authorize]
+        public async Task<IActionResult> Delete(int id)
+        {
+            await this.blogsService.DeleteAsync(id);
+            return this.RedirectToAction(nameof(this.All));
         }
     }
 }

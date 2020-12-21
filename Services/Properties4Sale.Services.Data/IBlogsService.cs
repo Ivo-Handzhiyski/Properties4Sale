@@ -8,7 +8,7 @@
 
     public interface IBlogsService
     {
-        Task CreateAsync(CreateBlogInputModel input, string userId);
+        Task CreateAsync(CreateBlogInputModel input, string userId, string imagePath);
 
         IEnumerable<T> GetAll<T>(int page, int itemsPerPage = 12);
 
@@ -16,8 +16,10 @@
 
         T GetById<T>(int id);
 
-        Task UpdateAsync(int id, EditPropertyInputModel input);
-
         Task DeleteAsync(int id);
+
+        int GetCount();
+
+        Task UpdateAsync(int id, EditBlogInputModel input);
     }
 }

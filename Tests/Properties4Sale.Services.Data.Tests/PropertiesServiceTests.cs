@@ -5,6 +5,7 @@
     using System.Linq;
     using System.Threading.Tasks;
 
+    using AutoMapper;
     using Microsoft.EntityFrameworkCore.Metadata;
     using Moq;
     using Properties4Sale.Data.Common;
@@ -17,5 +18,51 @@
 
     public class PropertiesServiceTests
     {
+        private readonly IDeletableEntityRepository<Property> propertyRepository;
+
+        public PropertiesServiceTests()
+        {
+        }
+
+        [Fact]
+        public async Task AddPropertiesAsyncShouldWorkCorrectly()
+        {
+            var mock = new Mock<IDeletableEntityRepository<Property>>();
+
+            var propertiesService = new PropertiesService((IDeletableEntityRepository<Property>)this.propertyRepository);
+            var property = new Property();
+            var propertyModel = new CreatePropertyInputModel()
+            {
+              Name = "Name",
+              Description = "Description",
+              Location = "Location",
+              Price = 1000,
+              Area = "Area",
+              Baths = 1,
+              Garages = 1,
+              Beds = 1,
+              Address = "Address",
+            };
+
+            await propertiesService.CreateAsync(propertyModel, "userId", "imagePath");
+
+            Assert.Equal("Name", propertyModel.Name);
+
+            Assert.Equal("Description", propertyModel.Description);
+
+            Assert.Equal("Location", propertyModel.Location);
+
+            Assert.Equal(1000, propertyModel.Price);
+
+            Assert.Equal("Area", propertyModel.Area);
+
+            Assert.Equal(1, propertyModel.Baths);
+
+            Assert.Equal(1, propertyModel.Garages);
+
+            Assert.Equal(1, propertyModel.Beds);
+
+            Assert.Equal("Address", propertyModel.Address);
+        }
     }
 }

@@ -70,16 +70,18 @@
                         </nav>
                         @if (this.User.Identity.IsAuthenticated)
                         {
-                            <a asp-action="Edit" asp-route-id="@this.Model.Id" class="btn btn-success w-25">Edit</a>
-                                            <button class="btn btn-danger w-25" data-toggle="modal" data-target="#deleteModal">
-                                                Delete
-                                            </button>
-                            <form asp-action="Delete" asp-route-id="@this.Model.Id" id="deleteForm"></form>
+                            
+                                <a asp-action="Edit" asp-route-id="@this.Model.Id" class="btn btn-success w-25">Edit</a>
+                                <button class="btn btn-danger w-25" data-toggle="modal" data-target="#deleteModal">
+                                    Delete
+                                </button>
+                                <form asp-action="Delete" asp-route-id="@this.Model.Id" id="deleteForm"></form>
+                            
+
                         }
                         <form method="post" asp-action="SendToEmail" asp-route-id="@this.Model.Id">
                             <button class="btn btn-warning">Send to my email</button>
                         </form>
-
 
 
                     </div>
@@ -88,14 +90,16 @@
         </section><!-- End Intro Single-->
         <!-- ======= Property Single ======= -->
         <section class="property-single nav-arrow-b">
-            <div class="container">
+            <div class="container ">
                 <div class="row">
+                    
                     <div class="col-sm-12">
-                        <div id="property-single-carousel" class="owl-carousel owl-arrow gallery-property">
-                            <div class="carousel-item-b img-a">
-                                <img src=@this.Model.ImageUrl alt="">
-                            </div>
+                        <div class="owl-item">
+                                <img src="@this.Model.ImageUrl" class="card-img-top" height="850px" alt="">
+                         </div>
+
                         </div>
+                    <div class="container">
                         <div class="row justify-content-between">
                             <div class="col-md-5 col-lg-4">
                                 <div class="property-price d-flex justify-content-center foo">
@@ -149,6 +153,9 @@
                                                 <strong>Garage:</strong>
                                                 <span>@this.Model.Garages</span>
                                             </li>
+                                            <li class="d-flex justify-content-between">
+                                                <button class="btn-primary w-50 text-md-center">Buy</button>
+                                            </li>
                                         </ul>
                                     </div>
                                 </div>
@@ -189,7 +196,7 @@
                             </div>
                         </div>
                     </div>
-
+                    
                     <div class="col-md-12">
                         <div class="row section-t3">
                             <div class="col-sm-12">

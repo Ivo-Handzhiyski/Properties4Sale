@@ -17,14 +17,11 @@
     public class PropertiesService : IPropertiesService
     {
         private readonly IDeletableEntityRepository<Property> propertiesRepository;
-        private readonly IRepository<Feature> featuresRepository;
 
         public PropertiesService(
-            IDeletableEntityRepository<Property> propertiesRepository,
-            IRepository<Feature> featuresRepository)
+            IDeletableEntityRepository<Property> propertiesRepository)
         {
             this.propertiesRepository = propertiesRepository;
-            this.featuresRepository = featuresRepository;
         }
 
         public async Task CreateAsync(CreatePropertyInputModel input, string userId, string imagePath)
@@ -85,7 +82,8 @@
         {
             var properties = this.propertiesRepository.AllAsNoTracking()
              .OrderByDescending(x => x.Id)
-             .Skip((page - 1) * itemsPerPage).Take(itemsPerPage)
+             .Skip((page - 1) * itemsPerPage)
+             .Take(itemsPerPage)
              .To<T>()
              .ToList();
 
@@ -108,6 +106,20 @@
         public IEnumerable<T> GetProperties<T>(int count)
         {
             var property = this.propertiesRepository.All().OrderByDescending(x => x.Id).Take(count).To<T>().ToList();
+
+            return property;
+        }
+
+        public IEnumerable<T> GetPropertiesForUser<T>(string userId, int page, int itemsPerPage = 6)
+        {
+            var property = this.propertiesRepository
+                .AllAsNoTracking()
+                .Where(x => x.AddedByUserId == userId)
+                .OrderByDescending(x => x.Id)
+                .Skip((page - 1) * itemsPerPage)
+                .Take(itemsPerPage)
+                .To<T>()
+                .ToList();
 
             return property;
         }

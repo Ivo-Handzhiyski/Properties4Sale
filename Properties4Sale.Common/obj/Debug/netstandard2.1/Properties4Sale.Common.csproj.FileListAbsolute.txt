@@ -24,3 +24,4 @@ C:\Users\Ivo\Desktop\VERI IMPROTA STUF\prp\Properties4Sale-main\Properties4Sale.
 C:\Users\Ivo\Desktop\VERI IMPROTA STUF\prp\Properties4Sale-main\Properties4Sale.Common\obj\Debug\netstandard2.1\Properties4Sale.Common.dll
 C:\Users\Ivo\Desktop\VERI IMPROTA STUF\prp\Properties4Sale-main\Properties4Sale.Common\obj\Debug\netstandard2.1\Properties4Sale.Common.pdb
 C:\Users\Ivo\Desktop\VERI IMPROTA STUF\prp\Properties4Sale-main\Properties4Sale.Common\obj\Debug\netstandard2.1\Properties4Sale.Common.csprojAssemblyReference.cache
+C:\Users\Ivo\Desktop\VERI IMPROTA STUF\Properties4Sale\Properties4Sale\Properties4Sale.Common\obj\Debug\netstandard2.1\Properties4Sale.Common.csprojAssemblyReference.cache

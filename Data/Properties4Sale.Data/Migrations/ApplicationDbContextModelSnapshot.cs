@@ -292,6 +292,38 @@ namespace Properties4Sale.Data.Migrations
                     b.ToTable("Blogs");
                 });
 
+            modelBuilder.Entity("Properties4Sale.Data.Models.BlogImage", b =>
+                {
+                    b.Property<string>("Id")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("AddedByUserid")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<int>("BlogId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("CreatedOn")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Extension")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("ModifiedOn")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("RemoteImageUrl")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("AddedByUserid");
+
+                    b.HasIndex("BlogId");
+
+                    b.ToTable("BlogImages");
+                });
+
             modelBuilder.Entity("Properties4Sale.Data.Models.Comment", b =>
                 {
                     b.Property<int>("Id")
@@ -445,6 +477,9 @@ namespace Properties4Sale.Data.Migrations
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("bit");
 
+                    b.Property<bool>("IsSold")
+                        .HasColumnType("bit");
+
                     b.Property<string>("Location")
                         .HasColumnType("nvarchar(max)");
 
@@ -582,6 +617,23 @@ namespace Properties4Sale.Data.Migrations
                     b.Navigation("AddedByUser");
                 });
 
+            modelBuilder.Entity("Properties4Sale.Data.Models.BlogImage", b =>
+                {
+                    b.HasOne("Properties4Sale.Data.Models.ApplicationUser", "AddedByUser")
+                        .WithMany()
+                        .HasForeignKey("AddedByUserid");
+
+                    b.HasOne("Properties4Sale.Data.Models.Blog", "Blog")
+                        .WithMany("BlogImages")
+                        .HasForeignKey("BlogId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.Navigation("AddedByUser");
+
+                    b.Navigation("Blog");
+                });
+
             modelBuilder.Entity("Properties4Sale.Data.Models.Comment", b =>
                 {
                     b.HasOne("Properties4Sale.Data.Models.Blog", "Blog")
@@ -663,6 +715,8 @@ namespace Properties4Sale.Data.Migrations
 
             modelBuilder.Entity("Properties4Sale.Data.Models.Blog", b =>
                 {
+                    b.Navigation("BlogImages");
+
                     b.Navigation("Comments");
                 });
 

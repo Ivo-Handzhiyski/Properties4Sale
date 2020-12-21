@@ -99,7 +99,7 @@
             return this.RedirectToAction("ById", new { id = id });
         }
 
-        public IActionResult All(string sortOrder, int id = 1)
+        public IActionResult All(int id = 1)
         {
             const int ItemsPerPage = 6;
 
@@ -120,7 +120,7 @@
         }
 
         [HttpPost]
-
+        [Authorize]
         public async Task<IActionResult> Delete(int id)
         {
             await this.propertiesService.DeleteAsync(id);
@@ -135,7 +135,7 @@
             html.AppendLine($"<h1>{property.Name}</h1>");
             html.AppendLine($"<h3>{property.Price}</h3>");
             html.AppendLine($"<img src=\"{property.ImageUrl}\" />");
-            await this.emailSender.SendEmailAsync("Properties4Sale@lol.com", "Properties4Sale", "dotoksurvival@gmail.com", property.Name, html.ToString());
+            await this.emailSender.SendEmailAsync("Properties4Sale@lol.com", "Properties4Sale", "citij54266@econeom.com", property.Name, html.ToString());
             return this.RedirectToAction(nameof(this.ById), new { id });
         }
     }

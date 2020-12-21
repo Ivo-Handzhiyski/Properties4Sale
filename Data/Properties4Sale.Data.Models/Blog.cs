@@ -10,6 +10,7 @@
         public Blog()
         {
             this.Comments = new HashSet<Comment>();
+            this.BlogImages = new HashSet<BlogImage>();
         }
 
         public string Name { get; set; }
@@ -29,5 +30,7 @@
         public virtual ApplicationUser AddedByUser { get; set; }
 
         public ICollection<Comment> Comments { get; set; }
+
+        public ICollection<BlogImage> BlogImages { get; set; }
     }
 }
