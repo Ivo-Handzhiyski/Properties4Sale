@@ -1,6 +1,7 @@
 ﻿namespace Properties4Sale.Web.Controllers
 {
     using System;
+    using System.Security.Claims;
     using System.Threading.Tasks;
 
     using Microsoft.AspNetCore.Authorization;
@@ -16,15 +17,18 @@
         private readonly UserManager<ApplicationUser> userManager;
         private readonly IBlogsService blogsService;
         private readonly IWebHostEnvironment environment;
+        private readonly ICommentService commentService;
 
         public BlogController(
             UserManager<ApplicationUser> userManager,
             IBlogsService blogsService,
-            IWebHostEnvironment environment)
+            IWebHostEnvironment environment,
+            ICommentService commentService)
         {
             this.userManager = userManager;
             this.blogsService = blogsService;
             this.environment = environment;
+            this.commentService = commentService;
         }
 
         public IActionResult Index()
@@ -113,6 +117,20 @@
         {
             await this.blogsService.DeleteAsync(id);
             return this.RedirectToAction(nameof(this.All));
+        }
+
+        [Authorize]
+        [HttpPost]
+        public async Task<IActionResult> AddComment(string content, int blogId)
+        {
+            var userId = this.userManager.GetUserId(this.User);
+            var lol = this.User.Identity.Name;
+            if (content != null)
+            {
+                await this.commentService.AddCommentAsync(content, blogId, userId, lol);
+            }
+
+            return this.RedirectToAction("ById", new { id = blogId });
         }
     }
 }

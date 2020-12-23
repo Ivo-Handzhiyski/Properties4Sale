@@ -31,11 +31,13 @@
 
         public double AverageVote { get; set; }
 
+        public string Email { get; set; }
+
         public virtual ApplicationUser AddedByUser { get; set; }
 
         public ICollection<Comment> Comments { get; set; }
 
-        public ICollection<BlogImage> BlogImages { get; set; }          
+        public ICollection<BlogImage> BlogImages { get; set; }
 
         public void CreateMappings(IProfileExpression configuration)
         {

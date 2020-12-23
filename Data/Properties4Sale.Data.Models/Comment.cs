@@ -10,9 +10,9 @@
 
         public virtual Blog Blog { get; set; }
 
-        public int UserId { get; set; }
+        public string AddedByUserId { get; set; }
 
-        public virtual ApplicationUser User { get; set; }
+        public virtual ApplicationUser AddedByUser { get; set; }
 
         public string Name { get; set; }
 
