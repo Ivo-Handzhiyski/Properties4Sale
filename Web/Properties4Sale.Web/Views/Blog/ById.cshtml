@@ -23,6 +23,7 @@
     <link href="~/assets/vendor/animate.css/animate.min.css" rel="stylesheet">
     <link href="~/assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <link href="~/assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="~/lib/fontawesome/css/all.css" rel="stylesheet" asp-append-version="true" />
 
     <!-- Template Main CSS File -->
     <link href="~/assets/css/style.css" rel="stylesheet">
@@ -55,6 +56,7 @@
                             <span class="color-text-a">@Model.SubName</span>
                         </div>
                     </div>
+
                     <div class="col-md-12 col-lg-4">
                         <nav aria-label="breadcrumb" class="breadcrumb-box d-flex justify-content-lg-end">
 
@@ -67,6 +69,7 @@
                                 </li>
 
                             </ol>
+
                         </nav>
                         @if (this.User.Identity.IsAuthenticated)
                         {
@@ -83,7 +86,12 @@
                             <button class="btn btn-warning">Send to my email</button>
                         </form>
                     </div>
-
+                    <i data-vote="1" class="fas fa-star"></i>
+                    <i data-vote="2" class="fas fa-star"></i>
+                    <i data-vote="3" class="fas fa-star"></i>
+                    <i data-vote="4" class="fas fa-star"></i>
+                    <i data-vote="5" class="fas fa-star"></i>
+                    <span id="averageVoteValue">@Model.AverageVote.ToString("0.0")</span><span> / 5</span>
                 </div>
 
             </div>
@@ -259,7 +267,32 @@
             </div>
         </div>
     </div>
-
+    <form method="post" id="antiForgeryForm"></form>
+    @section Scripts {
+        <script>
+            $("i[data-vote]").each(function (el) {
+                $(this).on("click", function () {
+                    var value = $(this).attr("data-vote");
+                    var blogId = @Model.Id;
+                    var data = { blogId: blogId, value: value };
+                    var antiForgeryToken = $('#antiForgeryForm input[name=__RequestVerificationToken]').val();
+                    $.ajax({
+                        type: "POST",
+                        url: "/api/Votes",
+                        data: JSON.stringify(data),
+                        headers: {
+                            'X-CSRF-TOKEN': antiForgeryToken
+                        },
+                        success: function (data) {
+                            console.log(data);
+                            $('#averageVoteValue').html(data.averageVote.toFixed(1));
+                        },
+                        contentType: 'application/json',
+                    });
+                })
+            });
+        </script>
+    }
     <!-- Vendor JS Files -->
     <script src="~/assets/vendor/jquery/jquery.min.js"></script>
     <script src="~/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>

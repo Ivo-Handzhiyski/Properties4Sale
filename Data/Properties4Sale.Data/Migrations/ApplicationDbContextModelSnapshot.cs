@@ -557,6 +557,37 @@ namespace Properties4Sale.Data.Migrations
                     b.ToTable("TypeOfProperties");
                 });
 
+            modelBuilder.Entity("Properties4Sale.Data.Models.Vote", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .UseIdentityColumn();
+
+                    b.Property<int>("BlogId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("CreatedOn")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("ModifiedOn")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("UserId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<byte>("Value")
+                        .HasColumnType("tinyint");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("BlogId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("Votes");
+                });
+
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
                 {
                     b.HasOne("Properties4Sale.Data.Models.ApplicationRole", null)
@@ -704,6 +735,23 @@ namespace Properties4Sale.Data.Migrations
                     b.Navigation("Property");
                 });
 
+            modelBuilder.Entity("Properties4Sale.Data.Models.Vote", b =>
+                {
+                    b.HasOne("Properties4Sale.Data.Models.Blog", "Blog")
+                        .WithMany("Votes")
+                        .HasForeignKey("BlogId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.HasOne("Properties4Sale.Data.Models.ApplicationUser", "User")
+                        .WithMany("Votes")
+                        .HasForeignKey("UserId");
+
+                    b.Navigation("Blog");
+
+                    b.Navigation("User");
+                });
+
             modelBuilder.Entity("Properties4Sale.Data.Models.ApplicationUser", b =>
                 {
                     b.Navigation("Claims");
@@ -711,6 +759,8 @@ namespace Properties4Sale.Data.Migrations
                     b.Navigation("Logins");
 
                     b.Navigation("Roles");
+
+                    b.Navigation("Votes");
                 });
 
             modelBuilder.Entity("Properties4Sale.Data.Models.Blog", b =>
@@ -718,6 +768,8 @@ namespace Properties4Sale.Data.Migrations
                     b.Navigation("BlogImages");
 
                     b.Navigation("Comments");
+
+                    b.Navigation("Votes");
                 });
 
             modelBuilder.Entity("Properties4Sale.Data.Models.Feature", b =>

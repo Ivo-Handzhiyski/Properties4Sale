@@ -11,6 +11,7 @@
         {
             this.Comments = new HashSet<Comment>();
             this.BlogImages = new HashSet<BlogImage>();
+            this.Votes = new HashSet<Vote>();
         }
 
         public string Name { get; set; }
@@ -29,8 +30,10 @@
 
         public virtual ApplicationUser AddedByUser { get; set; }
 
-        public ICollection<Comment> Comments { get; set; }
+        public virtual ICollection<Comment> Comments { get; set; }
 
-        public ICollection<BlogImage> BlogImages { get; set; }
+        public virtual ICollection<BlogImage> BlogImages { get; set; }
+
+        public virtual ICollection<Vote> Votes { get; set; }
     }
 }

@@ -71,4 +71,13 @@
   <ItemGroup>
     <Folder Include="Areas\Administration\Views\Dashboard\" />
   </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\lib\fontawesome\webfonts\fa-brands-400.svg" />
+    <None Include="wwwroot\lib\fontawesome\webfonts\fa-brands-400.woff2" />
+    <None Include="wwwroot\lib\fontawesome\webfonts\fa-regular-400.svg" />
+    <None Include="wwwroot\lib\fontawesome\webfonts\fa-regular-400.woff2" />
+    <None Include="wwwroot\lib\fontawesome\webfonts\fa-solid-900.svg" />
+    <None Include="wwwroot\lib\fontawesome\webfonts\fa-solid-900.woff2" />
+  </ItemGroup>
 </Project>
