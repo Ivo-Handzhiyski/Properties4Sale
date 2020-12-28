@@ -2,6 +2,7 @@
 {
     using System.Collections.Generic;
 
+    using Properties4Sale.Web.ViewModels.Blog;
     using Properties4Sale.Web.ViewModels.Property;
 
     public class IndexViewModel
@@ -13,5 +14,7 @@
         public IEnumerable<IndexPropertyVisualizerViewModel> VisualiseProperties { get; set; }
 
         public IEnumerable<IndexPropertyVisualizerViewModel> VisualisePropertiesRandom { get; set; }
+
+        public IEnumerable<VisualizeBlogViewModel> VisualiseBlog { get; set; }
     }
 }

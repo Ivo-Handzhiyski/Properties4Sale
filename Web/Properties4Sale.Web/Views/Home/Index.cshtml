@@ -108,7 +108,7 @@
                                 </p>
                             </div>
                             <div class="card-footer-c">
-                                <a href="#" class="link-c link-icon">
+                                <a  asp-area="" asp-controller="AboutUs" asp-action="Index" class="link-c link-icon">
                                     Read more
                                     <span class="ion-ios-arrow-forward"></span>
                                 </a>
@@ -133,7 +133,7 @@
                                 </p>
                             </div>
                             <div class="card-footer-c">
-                                <a href="#" class="link-c link-icon">
+                                <a  asp-area="" asp-controller="AboutUs" asp-action="Index" class="link-c link-icon">
                                     Read more
                                     <span class="ion-ios-arrow-forward"></span>
                                 </a>
@@ -158,7 +158,7 @@
                                 </p>
                             </div>
                             <div class="card-footer-c">
-                                <a href="#" class="link-c link-icon">
+                                <a asp-area="" asp-controller="AboutUs" asp-action="Index" class="link-c link-icon">
                                     Read more
                                     <span class="ion-ios-arrow-forward"></span>
                                 </a>
@@ -202,9 +202,8 @@
                             <div class="card-overlay-a-content">
                                 <div class="card-header-a">
                                     <h2 class="card-title-a">
-                                        <a href="property-single.html">
-                                            @property.Address
-                                            <br /> @property.Name
+                                        <a>
+                                                @property.Name
                                         </a>
                                     </h2>
                                 </div>
@@ -477,106 +476,36 @@
                     </div>
                 </div>
                 <div id="new-carousel" class="owl-carousel owl-theme">
+                    @foreach (var blog in this.Model.VisualiseBlog)
+                    {
+
+
                     <div class="carousel-item-c">
                         <div class="card-box-b card-shadow news-box">
                             <div class="img-box-b">
-                                <img src="assets/img/post-2.jpg" alt="" class="img-b img-fluid">
+                                <img src=@blog.ImageUrl alt="" class="img-b img-fluid">
                             </div>
                             <div class="card-overlay">
                                 <div class="card-header-b">
                                     <div class="card-category-b">
-                                        <a href="#" class="category-b">House</a>
+                                        <a  class="category-b">@blog.Category</a>
                                     </div>
                                     <div class="card-title-b">
                                         <h2 class="title-2">
-                                            <a href="blog-single.html">
-                                                House is comming
-                                                <br> new
+                                            <a asp-controller="Blog" asp-action="ById" asp-route-id="@blog.Id">
+                                                @blog.Name
+                                                <br>
                                             </a>
                                         </h2>
                                     </div>
                                     <div class="card-date">
-                                        <span class="date-b">18 Sep. 2017</span>
+                                        <span class="date-b">@blog.Date</span>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="carousel-item-c">
-                        <div class="card-box-b card-shadow news-box">
-                            <div class="img-box-b">
-                                <img src="assets/img/post-5.jpg" alt="" class="img-b img-fluid">
-                            </div>
-                            <div class="card-overlay">
-                                <div class="card-header-b">
-                                    <div class="card-category-b">
-                                        <a href="#" class="category-b">Travel</a>
-                                    </div>
-                                    <div class="card-title-b">
-                                        <h2 class="title-2">
-                                            <a href="blog-single.html">
-                                                Travel is comming
-                                                <br> new
-                                            </a>
-                                        </h2>
-                                    </div>
-                                    <div class="card-date">
-                                        <span class="date-b">18 Sep. 2017</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item-c">
-                        <div class="card-box-b card-shadow news-box">
-                            <div class="img-box-b">
-                                <img src="assets/img/post-7.jpg" alt="" class="img-b img-fluid">
-                            </div>
-                            <div class="card-overlay">
-                                <div class="card-header-b">
-                                    <div class="card-category-b">
-                                        <a href="#" class="category-b">Park</a>
-                                    </div>
-                                    <div class="card-title-b">
-                                        <h2 class="title-2">
-                                            <a href="blog-single.html">
-                                                Park is comming
-                                                <br> new
-                                            </a>
-                                        </h2>
-                                    </div>
-                                    <div class="card-date">
-                                        <span class="date-b">18 Sep. 2017</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item-c">
-                        <div class="card-box-b card-shadow news-box">
-                            <div class="img-box-b">
-                                <img src="assets/img/post-3.jpg" alt="" class="img-b img-fluid">
-                            </div>
-                            <div class="card-overlay">
-                                <div class="card-header-b">
-                                    <div class="card-category-b">
-                                        <a href="#" class="category-b">Travel</a>
-                                    </div>
-                                    <div class="card-title-b">
-                                        <h2 class="title-2">
-                                            <a href="#">
-                                                Travel is comming
-                                                <br> new
-                                            </a>
-                                        </h2>
-                                    </div>
-                                    <div class="card-date">
-                                        <span class="date-b">18 Sep. 2017</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    }
                 </div>
             </div>
         </section><!-- End Latest News Section -->

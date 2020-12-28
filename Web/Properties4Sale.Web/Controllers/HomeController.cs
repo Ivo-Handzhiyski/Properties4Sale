@@ -9,6 +9,7 @@
     using Properties4Sale.Data.Models;
     using Properties4Sale.Services.Data;
     using Properties4Sale.Web.ViewModels;
+    using Properties4Sale.Web.ViewModels.Blog;
     using Properties4Sale.Web.ViewModels.Home;
     using Properties4Sale.Web.ViewModels.Property;
 
@@ -16,13 +17,16 @@
     {
         private readonly IGetCountService countService;
         private readonly IPropertiesService propertiesService;
+        private readonly IBlogsService blogsService;
 
         public HomeController(
             IGetCountService countService,
-            IPropertiesService propertiesService)
+            IPropertiesService propertiesService,
+            IBlogsService blogsService)
         {
             this.countService = countService;
             this.propertiesService = propertiesService;
+            this.blogsService = blogsService;
         }
 
         public IActionResult Index()
@@ -34,6 +38,7 @@
                 TypesOfPropertiesCount = counts.TypesOfPropertiesCount,
                 VisualiseProperties = this.propertiesService.GetProperties<IndexPropertyVisualizerViewModel>(5),
                 VisualisePropertiesRandom = this.propertiesService.GetPropertiesRandom<IndexPropertyVisualizerViewModel>(5),
+                VisualiseBlog = this.blogsService.GetBlogs<VisualizeBlogViewModel>(5),
             };
             return this.View(viewModel);
         }

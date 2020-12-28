@@ -1,0 +1,9 @@
+C:\Users\Ivo\Desktop\VERI IMPROTA STUF\Properties4Sale\Properties4Sale\Services\Properties4Sale.Services.Mapping\bin\Release\netstandard2.1\Properties4Sale.Services.Mapping.deps.json
+C:\Users\Ivo\Desktop\VERI IMPROTA STUF\Properties4Sale\Properties4Sale\Services\Properties4Sale.Services.Mapping\bin\Release\netstandard2.1\Properties4Sale.Services.Mapping.dll
+C:\Users\Ivo\Desktop\VERI IMPROTA STUF\Properties4Sale\Properties4Sale\Services\Properties4Sale.Services.Mapping\bin\Release\netstandard2.1\Properties4Sale.Services.Mapping.pdb
+C:\Users\Ivo\Desktop\VERI IMPROTA STUF\Properties4Sale\Properties4Sale\Services\Properties4Sale.Services.Mapping\obj\Release\netstandard2.1\Properties4Sale.Services.Mapping.csprojAssemblyReference.cache
+C:\Users\Ivo\Desktop\VERI IMPROTA STUF\Properties4Sale\Properties4Sale\Services\Properties4Sale.Services.Mapping\obj\Release\netstandard2.1\Properties4Sale.Services.Mapping.AssemblyInfoInputs.cache
+C:\Users\Ivo\Desktop\VERI IMPROTA STUF\Properties4Sale\Properties4Sale\Services\Properties4Sale.Services.Mapping\obj\Release\netstandard2.1\Properties4Sale.Services.Mapping.AssemblyInfo.cs
+C:\Users\Ivo\Desktop\VERI IMPROTA STUF\Properties4Sale\Properties4Sale\Services\Properties4Sale.Services.Mapping\obj\Release\netstandard2.1\Properties4Sale.Services.Mapping.csproj.CoreCompileInputs.cache
+C:\Users\Ivo\Desktop\VERI IMPROTA STUF\Properties4Sale\Properties4Sale\Services\Properties4Sale.Services.Mapping\obj\Release\netstandard2.1\Properties4Sale.Services.Mapping.dll
+C:\Users\Ivo\Desktop\VERI IMPROTA STUF\Properties4Sale\Properties4Sale\Services\Properties4Sale.Services.Mapping\obj\Release\netstandard2.1\Properties4Sale.Services.Mapping.pdb

@@ -44,7 +44,7 @@
               Address = "Address",
             };
 
-            await propertiesService.CreateAsync(propertyModel, "userId", "imagePath");
+            await propertiesService.CreateAsync(propertyModel, "511f7e5a-cec9-40d1-8fc7-1378a4fac3c6", "511f7e5a-cec9-40d1-8fc7-1378a4fac3c6");
 
             Assert.Equal("Name", propertyModel.Name);
 

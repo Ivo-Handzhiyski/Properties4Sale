@@ -87,7 +87,9 @@
 
         public IEnumerable<T> GetBlogs<T>(int count)
         {
-            throw new NotImplementedException();
+            var blogs = this.blogRepository.AllAsNoTracking().OrderBy(x => x.Id).Take(count).To<T>().ToList();
+
+            return blogs;
         }
 
         public T GetById<T>(int id)

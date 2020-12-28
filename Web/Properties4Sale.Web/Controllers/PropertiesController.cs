@@ -115,6 +115,8 @@
 
         public IActionResult ById(int id)
         {
+            this.ViewBag.userId = this.userManager.GetUserId(this.HttpContext.User);
+
             var property = this.propertiesService.GetById<PropertiesDetailsViewModel>(id);
             return this.View(property);
         }

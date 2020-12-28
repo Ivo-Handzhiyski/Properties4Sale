@@ -82,9 +82,7 @@
 
 
                         }
-                        <form method="post" asp-action="SendToEmail" asp-route-id="@this.Model.Id">
-                            <button class="btn btn-warning">Send to my email</button>
-                        </form>
+                        
                     </div>
                     <i data-vote="1" class="fas fa-star"></i>
                     <i data-vote="2" class="fas fa-star"></i>
@@ -159,7 +157,7 @@
                     </div>
                     <div class="col-md-10 offset-md-1 col-lg-10 offset-lg-1">
                         <div class="title-box-d">
-                            <h3 class="title-d">Comments (4)</h3>
+                            <h3 class="title-d">Comments @Model.Comments.Count()</h3>
                         </div>
                         <div class="box-comments">
                             <ul class="list-comments">

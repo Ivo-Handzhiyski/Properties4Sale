@@ -16,5 +16,6 @@
     <WebStackScaffolding_DbContextTypeFullName>Properties4Sale.Data.ApplicationDbContext</WebStackScaffolding_DbContextTypeFullName>
     <WebStackScaffolding_IsAsyncSelected>False</WebStackScaffolding_IsAsyncSelected>
     <WebStackScaffolding_IsViewGenerationSelected>True</WebStackScaffolding_IsViewGenerationSelected>
+    <NameOfLastUsedPublishProfile>Properties4Sale - Web Deploy</NameOfLastUsedPublishProfile>
   </PropertyGroup>
 </Project>
