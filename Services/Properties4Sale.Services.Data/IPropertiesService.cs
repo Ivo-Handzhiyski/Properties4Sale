@@ -15,9 +15,9 @@
 
         IEnumerable<T> GetProperties<T>(int count);
 
-        IEnumerable<T> GetPropertiesForUser<T>(string userId, int page, int itemsPerPage = 12);
-
         IEnumerable<T> GetPropertiesRandom<T>(int count);
+
+        IEnumerable<T> GetPropertiesForUser<T>(string userId, int page, int itemsPerPage = 12);
 
         int GetCount();
 

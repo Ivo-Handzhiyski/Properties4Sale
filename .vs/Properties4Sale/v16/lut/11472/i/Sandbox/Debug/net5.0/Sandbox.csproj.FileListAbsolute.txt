@@ -1,0 +1,15 @@
+C:\Users\Ivo\Desktop\VERI IMPROTA STUF\Properties4Sale\Properties4Sale\.vs\Properties4Sale\v16\lut\0\b\Sandbox\Debug\net5.0\Sandbox.exe
+C:\Users\Ivo\Desktop\VERI IMPROTA STUF\Properties4Sale\Properties4Sale\.vs\Properties4Sale\v16\lut\0\b\Sandbox\Debug\net5.0\appsettings.json
+C:\Users\Ivo\Desktop\VERI IMPROTA STUF\Properties4Sale\Properties4Sale\.vs\Properties4Sale\v16\lut\0\b\Sandbox\Debug\net5.0\Sandbox.deps.json
+C:\Users\Ivo\Desktop\VERI IMPROTA STUF\Properties4Sale\Properties4Sale\.vs\Properties4Sale\v16\lut\0\b\Sandbox\Debug\net5.0\Sandbox.runtimeconfig.json
+C:\Users\Ivo\Desktop\VERI IMPROTA STUF\Properties4Sale\Properties4Sale\.vs\Properties4Sale\v16\lut\0\b\Sandbox\Debug\net5.0\Sandbox.runtimeconfig.dev.json
+C:\Users\Ivo\Desktop\VERI IMPROTA STUF\Properties4Sale\Properties4Sale\.vs\Properties4Sale\v16\lut\0\b\Sandbox\Debug\net5.0\Sandbox.dll
+C:\Users\Ivo\Desktop\VERI IMPROTA STUF\Properties4Sale\Properties4Sale\.vs\Properties4Sale\v16\lut\0\b\Sandbox\Debug\net5.0\ref\Sandbox.dll
+C:\Users\Ivo\Desktop\VERI IMPROTA STUF\Properties4Sale\Properties4Sale\.vs\Properties4Sale\v16\lut\0\i\Sandbox\Debug\net5.0\Sandbox.csprojAssemblyReference.cache
+C:\Users\Ivo\Desktop\VERI IMPROTA STUF\Properties4Sale\Properties4Sale\.vs\Properties4Sale\v16\lut\0\i\Sandbox\Debug\net5.0\Sandbox.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ivo\Desktop\VERI IMPROTA STUF\Properties4Sale\Properties4Sale\.vs\Properties4Sale\v16\lut\0\i\Sandbox\Debug\net5.0\Sandbox.AssemblyInfoInputs.cache
+C:\Users\Ivo\Desktop\VERI IMPROTA STUF\Properties4Sale\Properties4Sale\.vs\Properties4Sale\v16\lut\0\i\Sandbox\Debug\net5.0\Sandbox.AssemblyInfo.cs
+C:\Users\Ivo\Desktop\VERI IMPROTA STUF\Properties4Sale\Properties4Sale\.vs\Properties4Sale\v16\lut\0\i\Sandbox\Debug\net5.0\Sandbox.csproj.CopyComplete
+C:\Users\Ivo\Desktop\VERI IMPROTA STUF\Properties4Sale\Properties4Sale\.vs\Properties4Sale\v16\lut\0\i\Sandbox\Debug\net5.0\Sandbox.dll
+C:\Users\Ivo\Desktop\VERI IMPROTA STUF\Properties4Sale\Properties4Sale\.vs\Properties4Sale\v16\lut\0\i\Sandbox\Debug\net5.0\ref\Sandbox.dll
+C:\Users\Ivo\Desktop\VERI IMPROTA STUF\Properties4Sale\Properties4Sale\.vs\Properties4Sale\v16\lut\0\i\Sandbox\Debug\net5.0\Sandbox.genruntimeconfig.cache

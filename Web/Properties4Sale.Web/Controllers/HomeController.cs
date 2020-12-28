@@ -15,27 +15,21 @@
 
     public class HomeController : BaseController
     {
-        private readonly IGetCountService countService;
         private readonly IPropertiesService propertiesService;
         private readonly IBlogsService blogsService;
 
         public HomeController(
-            IGetCountService countService,
             IPropertiesService propertiesService,
             IBlogsService blogsService)
         {
-            this.countService = countService;
             this.propertiesService = propertiesService;
             this.blogsService = blogsService;
         }
 
         public IActionResult Index()
         {
-            var counts = this.countService.GetCounts();
             var viewModel = new IndexViewModel
             {
-                PropertiesCount = counts.PropertiesCount,
-                TypesOfPropertiesCount = counts.TypesOfPropertiesCount,
                 VisualiseProperties = this.propertiesService.GetProperties<IndexPropertyVisualizerViewModel>(5),
                 VisualisePropertiesRandom = this.propertiesService.GetPropertiesRandom<IndexPropertyVisualizerViewModel>(5),
                 VisualiseBlog = this.blogsService.GetBlogs<VisualizeBlogViewModel>(5),

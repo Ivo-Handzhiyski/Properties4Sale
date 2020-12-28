@@ -39,8 +39,6 @@
 
         public virtual TypeOfProperty TypeOfProperty { get; set; }
 
-        public virtual ICollection<PropertyFeaturesViewModel> Features { get; set; }
-
         public virtual ICollection<Image> Images { get; set; }
 
         public void CreateMappings(IProfileExpression configuration)

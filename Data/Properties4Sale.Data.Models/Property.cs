@@ -8,7 +8,6 @@
     {
         public Property()
         {
-            this.Features = new HashSet<PropertyFeature>();
             this.Images = new HashSet<Image>();
         }
 
@@ -40,7 +39,6 @@
 
         public virtual TypeOfProperty TypeOfProperty { get; set; }
 
-        public virtual ICollection<PropertyFeature> Features { get; set; }
 
         public virtual ICollection<Image> Images { get; set; }
     }

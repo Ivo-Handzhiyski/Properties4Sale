@@ -25,13 +25,11 @@
 
         public DbSet<Property> Properties { get; set; }
 
-        public DbSet<Feature> Features { get; set; }
 
         public DbSet<Image> Images { get; set; }
 
         public DbSet<TypeOfProperty> TypeOfProperties { get; set; }
 
-        public DbSet<PropertyFeature> PropertyFeatures { get; set; }
 
         public DbSet<Blog> Blogs { get; set; }
 

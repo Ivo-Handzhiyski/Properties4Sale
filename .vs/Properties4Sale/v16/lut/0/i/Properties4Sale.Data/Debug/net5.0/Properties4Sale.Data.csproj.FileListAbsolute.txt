@@ -1,0 +1,14 @@
+C:\Users\Ivo\Desktop\VERI IMPROTA STUF\Properties4Sale\Properties4Sale\.vs\Properties4Sale\v16\lut\0\b\Properties4Sale.Data\Debug\net5.0\appsettings.json
+C:\Users\Ivo\Desktop\VERI IMPROTA STUF\Properties4Sale\Properties4Sale\.vs\Properties4Sale\v16\lut\0\b\Properties4Sale.Data\Debug\net5.0\Properties4Sale.Data.deps.json
+C:\Users\Ivo\Desktop\VERI IMPROTA STUF\Properties4Sale\Properties4Sale\.vs\Properties4Sale\v16\lut\0\b\Properties4Sale.Data\Debug\net5.0\Properties4Sale.Data.runtimeconfig.json
+C:\Users\Ivo\Desktop\VERI IMPROTA STUF\Properties4Sale\Properties4Sale\.vs\Properties4Sale\v16\lut\0\b\Properties4Sale.Data\Debug\net5.0\Properties4Sale.Data.runtimeconfig.dev.json
+C:\Users\Ivo\Desktop\VERI IMPROTA STUF\Properties4Sale\Properties4Sale\.vs\Properties4Sale\v16\lut\0\b\Properties4Sale.Data\Debug\net5.0\Properties4Sale.Data.dll
+C:\Users\Ivo\Desktop\VERI IMPROTA STUF\Properties4Sale\Properties4Sale\.vs\Properties4Sale\v16\lut\0\b\Properties4Sale.Data\Debug\net5.0\ref\Properties4Sale.Data.dll
+C:\Users\Ivo\Desktop\VERI IMPROTA STUF\Properties4Sale\Properties4Sale\.vs\Properties4Sale\v16\lut\0\i\Properties4Sale.Data\Debug\net5.0\Properties4Sale.Data.csprojAssemblyReference.cache
+C:\Users\Ivo\Desktop\VERI IMPROTA STUF\Properties4Sale\Properties4Sale\.vs\Properties4Sale\v16\lut\0\i\Properties4Sale.Data\Debug\net5.0\Properties4Sale.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ivo\Desktop\VERI IMPROTA STUF\Properties4Sale\Properties4Sale\.vs\Properties4Sale\v16\lut\0\i\Properties4Sale.Data\Debug\net5.0\Properties4Sale.Data.AssemblyInfoInputs.cache
+C:\Users\Ivo\Desktop\VERI IMPROTA STUF\Properties4Sale\Properties4Sale\.vs\Properties4Sale\v16\lut\0\i\Properties4Sale.Data\Debug\net5.0\Properties4Sale.Data.AssemblyInfo.cs
+C:\Users\Ivo\Desktop\VERI IMPROTA STUF\Properties4Sale\Properties4Sale\.vs\Properties4Sale\v16\lut\0\i\Properties4Sale.Data\Debug\net5.0\Properties4Sale.Data.csproj.CopyComplete
+C:\Users\Ivo\Desktop\VERI IMPROTA STUF\Properties4Sale\Properties4Sale\.vs\Properties4Sale\v16\lut\0\i\Properties4Sale.Data\Debug\net5.0\Properties4Sale.Data.dll
+C:\Users\Ivo\Desktop\VERI IMPROTA STUF\Properties4Sale\Properties4Sale\.vs\Properties4Sale\v16\lut\0\i\Properties4Sale.Data\Debug\net5.0\ref\Properties4Sale.Data.dll
+C:\Users\Ivo\Desktop\VERI IMPROTA STUF\Properties4Sale\Properties4Sale\.vs\Properties4Sale\v16\lut\0\i\Properties4Sale.Data\Debug\net5.0\Properties4Sale.Data.genruntimeconfig.cache

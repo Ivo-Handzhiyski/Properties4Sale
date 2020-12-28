@@ -369,42 +369,6 @@ namespace Properties4Sale.Data.Migrations
                     b.ToTable("Comments");
                 });
 
-            modelBuilder.Entity("Properties4Sale.Data.Models.Feature", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .UseIdentityColumn();
-
-                    b.Property<bool>("Balcony")
-                        .HasColumnType("bit");
-
-                    b.Property<bool>("Basement")
-                        .HasColumnType("bit");
-
-                    b.Property<bool>("CarGarage")
-                        .HasColumnType("bit");
-
-                    b.Property<bool>("Furnishing")
-                        .HasColumnType("bit");
-
-                    b.Property<bool>("Garden")
-                        .HasColumnType("bit");
-
-                    b.Property<bool>("HeatingSystem")
-                        .HasColumnType("bit");
-
-                    b.Property<bool>("Parking")
-                        .HasColumnType("bit");
-
-                    b.Property<bool>("StunningView")
-                        .HasColumnType("bit");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Features");
-                });
-
             modelBuilder.Entity("Properties4Sale.Data.Models.Image", b =>
                 {
                     b.Property<string>("Id")
@@ -501,28 +465,6 @@ namespace Properties4Sale.Data.Migrations
                     b.HasIndex("TypeOfPropertyId");
 
                     b.ToTable("Properties");
-                });
-
-            modelBuilder.Entity("Properties4Sale.Data.Models.PropertyFeature", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .UseIdentityColumn();
-
-                    b.Property<int>("FeatureId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("PropertyId")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("FeatureId");
-
-                    b.HasIndex("PropertyId");
-
-                    b.ToTable("PropertyFeatures");
                 });
 
             modelBuilder.Entity("Properties4Sale.Data.Models.TypeOfProperty", b =>
@@ -713,25 +655,6 @@ namespace Properties4Sale.Data.Migrations
                     b.Navigation("TypeOfProperty");
                 });
 
-            modelBuilder.Entity("Properties4Sale.Data.Models.PropertyFeature", b =>
-                {
-                    b.HasOne("Properties4Sale.Data.Models.Feature", "Feature")
-                        .WithMany("Properties")
-                        .HasForeignKey("FeatureId")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
-
-                    b.HasOne("Properties4Sale.Data.Models.Property", "Property")
-                        .WithMany("Features")
-                        .HasForeignKey("PropertyId")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
-
-                    b.Navigation("Feature");
-
-                    b.Navigation("Property");
-                });
-
             modelBuilder.Entity("Properties4Sale.Data.Models.Vote", b =>
                 {
                     b.HasOne("Properties4Sale.Data.Models.Blog", "Blog")
@@ -769,15 +692,8 @@ namespace Properties4Sale.Data.Migrations
                     b.Navigation("Votes");
                 });
 
-            modelBuilder.Entity("Properties4Sale.Data.Models.Feature", b =>
-                {
-                    b.Navigation("Properties");
-                });
-
             modelBuilder.Entity("Properties4Sale.Data.Models.Property", b =>
                 {
-                    b.Navigation("Features");
-
                     b.Navigation("Images");
                 });
 

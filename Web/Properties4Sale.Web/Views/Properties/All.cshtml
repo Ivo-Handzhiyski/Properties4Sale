@@ -23,6 +23,8 @@
     <link href="~/assets/vendor/animate.css/animate.min.css" rel="stylesheet">
     <link href="~/assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <link href="~/assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="~/css/site.min.css" rel="stylesheet" asp-append-version="true" />
+    <link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" asp-append-version="true" />
 
     <!-- Template Main CSS File -->
     <link href="~/assets/css/style.css" rel="stylesheet">
@@ -70,16 +72,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12">
-                        <div class="grid-option">
-                            <form>
-                                <select class="custom-select">
-                                    <option selected>All</option>
-                                    <option value="1">Desc. Price</option>
-                                    <option value="2">Old to new</option>
-                                    <option value="3">New to old</option>
-                                </select>
-                            </form>
-                        </div>
+                       
                     </div>
                     @foreach (var property in this.Model.Properties)
                     {

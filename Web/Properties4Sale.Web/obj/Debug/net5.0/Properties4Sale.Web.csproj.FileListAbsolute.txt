@@ -982,3 +982,8 @@ C:\Users\Ivo\Desktop\VERI IMPROTA STUF\Properties4Sale\Properties4Sale\Web\Prope
 C:\Users\Ivo\Desktop\VERI IMPROTA STUF\Properties4Sale\Properties4Sale\Web\Properties4Sale.Web\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Manage\Index.cshtml.g.cs
 C:\Users\Ivo\Desktop\VERI IMPROTA STUF\Properties4Sale\Properties4Sale\Web\Properties4Sale.Web\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Manage\PersonalData.cshtml.g.cs
 C:\Users\Ivo\Desktop\VERI IMPROTA STUF\Properties4Sale\Properties4Sale\Web\Properties4Sale.Web\obj\Debug\net5.0\Razor\Views\Blog\ById.cshtml.g.cs
+C:\Users\Ivo\Desktop\VERI IMPROTA STUF\Properties4Sale\Properties4Sale\Web\Properties4Sale.Web\obj\Debug\net5.0\Razor\Areas\Administration\Views\TypeOfProperties\Create.cshtml.g.cs
+C:\Users\Ivo\Desktop\VERI IMPROTA STUF\Properties4Sale\Properties4Sale\Web\Properties4Sale.Web\obj\Debug\net5.0\Razor\Areas\Administration\Views\TypeOfProperties\Delete.cshtml.g.cs
+C:\Users\Ivo\Desktop\VERI IMPROTA STUF\Properties4Sale\Properties4Sale\Web\Properties4Sale.Web\obj\Debug\net5.0\Razor\Areas\Administration\Views\TypeOfProperties\Details.cshtml.g.cs
+C:\Users\Ivo\Desktop\VERI IMPROTA STUF\Properties4Sale\Properties4Sale\Web\Properties4Sale.Web\obj\Debug\net5.0\Razor\Areas\Administration\Views\TypeOfProperties\Edit.cshtml.g.cs
+C:\Users\Ivo\Desktop\VERI IMPROTA STUF\Properties4Sale\Properties4Sale\Web\Properties4Sale.Web\obj\Debug\net5.0\Razor\Areas\Administration\Views\TypeOfProperties\Index.cshtml.g.cs

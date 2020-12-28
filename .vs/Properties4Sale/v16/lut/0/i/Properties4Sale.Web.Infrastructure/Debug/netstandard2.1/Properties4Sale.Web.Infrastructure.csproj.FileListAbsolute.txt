@@ -1,0 +1,6 @@
+C:\Users\Ivo\Desktop\VERI IMPROTA STUF\Properties4Sale\Properties4Sale\.vs\Properties4Sale\v16\lut\0\b\Properties4Sale.Web.Infrastructure\Debug\netstandard2.1\Properties4Sale.Web.Infrastructure.deps.json
+C:\Users\Ivo\Desktop\VERI IMPROTA STUF\Properties4Sale\Properties4Sale\.vs\Properties4Sale\v16\lut\0\b\Properties4Sale.Web.Infrastructure\Debug\netstandard2.1\Properties4Sale.Web.Infrastructure.dll
+C:\Users\Ivo\Desktop\VERI IMPROTA STUF\Properties4Sale\Properties4Sale\.vs\Properties4Sale\v16\lut\0\i\Properties4Sale.Web.Infrastructure\Debug\netstandard2.1\Properties4Sale.Web.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\Ivo\Desktop\VERI IMPROTA STUF\Properties4Sale\Properties4Sale\.vs\Properties4Sale\v16\lut\0\i\Properties4Sale.Web.Infrastructure\Debug\netstandard2.1\Properties4Sale.Web.Infrastructure.AssemblyInfo.cs
+C:\Users\Ivo\Desktop\VERI IMPROTA STUF\Properties4Sale\Properties4Sale\.vs\Properties4Sale\v16\lut\0\i\Properties4Sale.Web.Infrastructure\Debug\netstandard2.1\Properties4Sale.Web.Infrastructure.csproj.CopyComplete
+C:\Users\Ivo\Desktop\VERI IMPROTA STUF\Properties4Sale\Properties4Sale\.vs\Properties4Sale\v16\lut\0\i\Properties4Sale.Web.Infrastructure\Debug\netstandard2.1\Properties4Sale.Web.Infrastructure.dll

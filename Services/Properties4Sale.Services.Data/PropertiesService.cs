@@ -110,23 +110,23 @@
             return property;
         }
 
-        public IEnumerable<T> GetPropertiesForUser<T>(string userId, int page, int itemsPerPage = 6)
+        public IEnumerable<T> GetPropertiesRandom<T>(int count)
         {
-            var property = this.propertiesRepository
-                .AllAsNoTracking()
-                .Where(x => x.AddedByUserId == userId)
-                .OrderByDescending(x => x.Id)
-                .Skip((page - 1) * itemsPerPage)
-                .Take(itemsPerPage)
-                .To<T>()
-                .ToList();
+            var property = this.propertiesRepository.All().OrderBy(x => Guid.NewGuid()).Take(count).To<T>().ToList();
 
             return property;
         }
 
-        public IEnumerable<T> GetPropertiesRandom<T>(int count)
+        public IEnumerable<T> GetPropertiesForUser<T>(string userId, int page, int itemsPerPage = 12)
         {
-            var property = this.propertiesRepository.All().OrderBy(x => Guid.NewGuid()).Take(count).To<T>().ToList();
+            var property = this.propertiesRepository
+              .AllAsNoTracking()
+              .Where(x => x.AddedByUserId == userId)
+              .OrderByDescending(x => x.Id)
+              .Skip((page - 1) * itemsPerPage)
+              .Take(itemsPerPage)
+              .To<T>()
+              .ToList();
 
             return property;
         }

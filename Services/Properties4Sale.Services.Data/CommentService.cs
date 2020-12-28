@@ -37,19 +37,5 @@
             await this.commentsRepository.AddAsync(comment);
             await this.commentsRepository.SaveChangesAsync();
         }
-
-        public async Task<bool> DeleteCommentAsync(int id, string userId)
-        {
-            var comment = this.commentsRepository.All().FirstOrDefault(x => x.Id == id);
-
-            if (userId != comment.AddedByUserId)
-            {
-                return false;
-            }
-
-            this.commentsRepository.Delete(comment);
-            await this.commentsRepository.SaveChangesAsync();
-            return true;
-        }
     }
 }
