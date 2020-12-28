@@ -507,3 +507,8 @@ C:\Users\Ivo\Desktop\VERI IMPROTA STUF\Properties4Sale\Properties4Sale\Web\Prope
 C:\Users\Ivo\Desktop\VERI IMPROTA STUF\Properties4Sale\Properties4Sale\Web\Properties4Sale.Web\obj\Release\net5.0\ref\Properties4Sale.Web.dll
 C:\Users\Ivo\Desktop\VERI IMPROTA STUF\Properties4Sale\Properties4Sale\Web\Properties4Sale.Web\obj\Release\net5.0\Properties4Sale.Web.pdb
 C:\Users\Ivo\Desktop\VERI IMPROTA STUF\Properties4Sale\Properties4Sale\Web\Properties4Sale.Web\obj\Release\net5.0\Properties4Sale.Web.genruntimeconfig.cache
+C:\Users\Ivo\Desktop\VERI IMPROTA STUF\Properties4Sale\Properties4Sale\Web\Properties4Sale.Web\obj\Release\net5.0\Razor\Areas\Administration\Views\TypeOfProperties\Create.cshtml.g.cs
+C:\Users\Ivo\Desktop\VERI IMPROTA STUF\Properties4Sale\Properties4Sale\Web\Properties4Sale.Web\obj\Release\net5.0\Razor\Areas\Administration\Views\TypeOfProperties\Delete.cshtml.g.cs
+C:\Users\Ivo\Desktop\VERI IMPROTA STUF\Properties4Sale\Properties4Sale\Web\Properties4Sale.Web\obj\Release\net5.0\Razor\Areas\Administration\Views\TypeOfProperties\Details.cshtml.g.cs
+C:\Users\Ivo\Desktop\VERI IMPROTA STUF\Properties4Sale\Properties4Sale\Web\Properties4Sale.Web\obj\Release\net5.0\Razor\Areas\Administration\Views\TypeOfProperties\Edit.cshtml.g.cs
+C:\Users\Ivo\Desktop\VERI IMPROTA STUF\Properties4Sale\Properties4Sale\Web\Properties4Sale.Web\obj\Release\net5.0\Razor\Areas\Administration\Views\TypeOfProperties\Index.cshtml.g.cs

@@ -115,6 +115,7 @@ C:\Users\Ivo\Desktop\VERI IMPROTA STUF\Properties4Sale\Properties4Sale\Web\Prope
 C:\Users\Ivo\Desktop\VERI IMPROTA STUF\Properties4Sale\Properties4Sale\Web\Properties4Sale.Web\obj\Release\net5.0\PubTmp\Out\wwwroot\images\properties\0b07d9f6-e852-4ab0-bea8-1f234239b306.jpg
 C:\Users\Ivo\Desktop\VERI IMPROTA STUF\Properties4Sale\Properties4Sale\Web\Properties4Sale.Web\obj\Release\net5.0\PubTmp\Out\wwwroot\images\properties\0b8975b5-3070-457a-882a-eb3b32772716.jpg
 C:\Users\Ivo\Desktop\VERI IMPROTA STUF\Properties4Sale\Properties4Sale\Web\Properties4Sale.Web\obj\Release\net5.0\PubTmp\Out\wwwroot\images\properties\0d64bf3f-2274-4585-a19c-14c534e9e64c.jpg
+C:\Users\Ivo\Desktop\VERI IMPROTA STUF\Properties4Sale\Properties4Sale\Web\Properties4Sale.Web\obj\Release\net5.0\PubTmp\Out\wwwroot\images\properties\1436b58c-0d09-487c-a1c1-08a0adedf29c.jpg
 C:\Users\Ivo\Desktop\VERI IMPROTA STUF\Properties4Sale\Properties4Sale\Web\Properties4Sale.Web\obj\Release\net5.0\PubTmp\Out\wwwroot\images\properties\14b3030b-f546-48d9-9e69-935211302128.jpg
 C:\Users\Ivo\Desktop\VERI IMPROTA STUF\Properties4Sale\Properties4Sale\Web\Properties4Sale.Web\obj\Release\net5.0\PubTmp\Out\wwwroot\images\properties\1e450220-3b03-43d4-b7fe-880c1a6abed7.jpg
 C:\Users\Ivo\Desktop\VERI IMPROTA STUF\Properties4Sale\Properties4Sale\Web\Properties4Sale.Web\obj\Release\net5.0\PubTmp\Out\wwwroot\images\properties\2c24ecd1-cdab-4c88-b5cb-28d36c02a269.jpg

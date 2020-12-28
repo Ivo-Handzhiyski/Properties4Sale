@@ -6,21 +6,22 @@
     using Microsoft.AspNetCore.Mvc;
     using Microsoft.EntityFrameworkCore;
     using Properties4Sale.Data;
+    using Properties4Sale.Data.Common.Repositories;
     using Properties4Sale.Data.Models;
 
     public class TypeOfPropertiesController : AdministrationController
     {
-        private readonly ApplicationDbContext db;
+        private readonly IDeletableEntityRepository<TypeOfProperty> typeOfPropertyRepository;
 
-        public TypeOfPropertiesController(ApplicationDbContext context)
+        public TypeOfPropertiesController(IDeletableEntityRepository<TypeOfProperty> typeOfPropertyRepository)
         {
-            this.db = context;
+            this.typeOfPropertyRepository = typeOfPropertyRepository;
         }
 
         // GET: Administration/TypeOfProperties
         public async Task<IActionResult> Index()
         {
-            return this.View(await this.db.TypeOfProperties.ToListAsync());
+            return this.View(await this.typeOfPropertyRepository.All().ToListAsync());
         }
 
         // GET: Administration/TypeOfProperties/Details/5
@@ -31,7 +32,7 @@
                 return this.NotFound();
             }
 
-            var typeOfProperty = await this.db.TypeOfProperties
+            var typeOfProperty = await this.typeOfPropertyRepository.All()
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (typeOfProperty == null)
             {
@@ -56,8 +57,8 @@
         {
             if (this.ModelState.IsValid)
             {
-                this.db.Add(typeOfProperty);
-                await this.db.SaveChangesAsync();
+                await this.typeOfPropertyRepository.AddAsync(typeOfProperty);
+                await this.typeOfPropertyRepository.SaveChangesAsync();
                 return this.RedirectToAction(nameof(this.Index));
             }
 
@@ -72,7 +73,7 @@
                 return this.NotFound();
             }
 
-            var typeOfProperty = await this.db.TypeOfProperties.FindAsync(id);
+            var typeOfProperty = this.typeOfPropertyRepository.All().FirstOrDefault(x => x.Id == id);
             if (typeOfProperty == null)
             {
                 return this.NotFound();
@@ -97,8 +98,8 @@
             {
                 try
                 {
-                    this.db.Update(typeOfProperty);
-                    await this.db.SaveChangesAsync();
+                    this.typeOfPropertyRepository.Update(typeOfProperty);
+                    await this.typeOfPropertyRepository.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
@@ -112,7 +113,7 @@
                     }
                 }
 
-                return this.RedirectToAction(nameof(Index));
+                return this.RedirectToAction(nameof(this.Index));
             }
 
             return this.View(typeOfProperty);
@@ -126,7 +127,7 @@
                 return this.NotFound();
             }
 
-            var typeOfProperty = await this.db.TypeOfProperties
+            var typeOfProperty = await this.typeOfPropertyRepository.All()
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (typeOfProperty == null)
             {
@@ -142,15 +143,15 @@
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var typeOfProperty = await this.db.TypeOfProperties.FindAsync(id);
-            this.db.TypeOfProperties.Remove(typeOfProperty);
-            await this.db.SaveChangesAsync();
-            return this.RedirectToAction(nameof(Index));
+            var typeOfProperty = this.typeOfPropertyRepository.All().FirstOrDefault(x => x.Id == id);
+            this.typeOfPropertyRepository.Delete(typeOfProperty);
+            await this.typeOfPropertyRepository.SaveChangesAsync();
+            return this.RedirectToAction(nameof(this.Index));
         }
 
         private bool TypeOfPropertyExists(int id)
         {
-            return this.db.TypeOfProperties.Any(e => e.Id == id);
+            return this.typeOfPropertyRepository.All().Any(e => e.Id == id);
         }
     }
 }
