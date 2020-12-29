@@ -102,6 +102,7 @@ C:\Users\Ivo\Desktop\VERI IMPROTA STUF\Properties4Sale\Properties4Sale\Web\Prope
 C:\Users\Ivo\Desktop\VERI IMPROTA STUF\Properties4Sale\Properties4Sale\Web\Properties4Sale.Web\obj\Release\net5.0\PubTmp\Out\wwwroot\assets\vendor\scrollreveal\scrollreveal.es.js
 C:\Users\Ivo\Desktop\VERI IMPROTA STUF\Properties4Sale\Properties4Sale\Web\Properties4Sale.Web\obj\Release\net5.0\PubTmp\Out\wwwroot\assets\vendor\scrollreveal\scrollreveal.js
 C:\Users\Ivo\Desktop\VERI IMPROTA STUF\Properties4Sale\Properties4Sale\Web\Properties4Sale.Web\obj\Release\net5.0\PubTmp\Out\wwwroot\assets\vendor\scrollreveal\scrollreveal.min.js
+C:\Users\Ivo\Desktop\VERI IMPROTA STUF\Properties4Sale\Properties4Sale\Web\Properties4Sale.Web\obj\Release\net5.0\PubTmp\Out\wwwroot\Error\404-2.jpg
 C:\Users\Ivo\Desktop\VERI IMPROTA STUF\Properties4Sale\Properties4Sale\Web\Properties4Sale.Web\obj\Release\net5.0\PubTmp\Out\wwwroot\favicon.ico
 C:\Users\Ivo\Desktop\VERI IMPROTA STUF\Properties4Sale\Properties4Sale\Web\Properties4Sale.Web\obj\Release\net5.0\PubTmp\Out\wwwroot\images\blogs\0de86a45-afaf-4ba2-bcc6-3ae0a23c604d.jpg
 C:\Users\Ivo\Desktop\VERI IMPROTA STUF\Properties4Sale\Properties4Sale\Web\Properties4Sale.Web\obj\Release\net5.0\PubTmp\Out\wwwroot\images\blogs\22fc51fc-6739-4589-941e-152547b8a274.jpg

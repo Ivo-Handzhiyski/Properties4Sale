@@ -2,12 +2,12 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
 <body>
 
     <!-- ======= Property Search Section ======= -->
     <div class="click-closed"></div>
 
+  
 
 
 
@@ -49,7 +49,7 @@
 
 
                         }
-                        
+
                     </div>
                     <i data-vote="1" class="fas fa-star"></i>
                     <i data-vote="2" class="fas fa-star"></i>
@@ -131,20 +131,20 @@
 
                                 @foreach (var comment in Model.Comments)
                                 {
-                                <li>
+                                    <li>
 
-                                    <div class="comment-details">
-                                        <h4 class="comment-author">@comment.Name</h4>
-                                        <span>@comment.CreatedOn</span>
-                                        <p class="comment-description">
-                                            @comment.Content
-                                        </p>
-                                    </div>
-                                </li>
-                                        }
-                                    
+                                        <div class="comment-details">
+                                            <h4 class="comment-author">@comment.Name</h4>
+                                            <span>@comment.CreatedOn</span>
+                                            <p class="comment-description">
+                                                @comment.Content
+                                            </p>
+                                        </div>
+                                    </li>
+                                }
 
-                                </ul>
+
+                            </ul>
                         </div>
                         <div class="form-comments">
                             <div class="title-box-d">
@@ -160,7 +160,7 @@
                                 <input type="hidden" name="blogId" value="@Model.Id" />
                                 <input type="submit" class="btn btn-a" value="Comment">
                             </form>
-                         
+
                         </div>
                     </div>
                 </div>
@@ -218,7 +218,7 @@
             });
         </script>
     }
-  
+
 
 </body>
 
