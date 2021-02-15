@@ -16,6 +16,8 @@
     using Properties4Sale.Services.Data;
     using Properties4Sale.Services.Messaging;
     using Properties4Sale.Web.ViewModels.Property;
+    using SendGrid;
+    using SendGrid.Helpers.Mail;
 
     public class PropertiesController : Controller
     {
@@ -121,6 +123,34 @@
             return this.View(property);
         }
 
+        public IActionResult SortByPriceAsc(int id = 1)
+        {
+            const int ItemsPerPage = 6;
+
+            var viewModel = new PropertiesListViewModel
+            {
+                ItemsPerPage = ItemsPerPage,
+                PageNumber = id,
+                PropertiesCount = this.propertiesService.GetCount(),
+                Properties = this.propertiesService.GetAll<VisualisePropertiesViewModel>(id, ItemsPerPage).OrderByDescending(x => x.Price),
+            };
+            return this.View(viewModel);
+        }
+
+        public IActionResult SortByPriceDesc(int id = 1)
+        {
+            const int ItemsPerPage = 6;
+
+            var viewModel = new PropertiesListViewModel
+            {
+                ItemsPerPage = ItemsPerPage,
+                PageNumber = id,
+                PropertiesCount = this.propertiesService.GetCount(),
+                Properties = this.propertiesService.GetAll<VisualisePropertiesViewModel>(id, ItemsPerPage).OrderBy(x => x.Price),
+            };
+            return this.View(viewModel);
+        }
+
         [HttpPost]
         [Authorize]
         public async Task<IActionResult> Delete(int id)
@@ -132,12 +162,6 @@
         [HttpPost]
         public async Task<IActionResult> SendToEmail(int id)
         {
-            var property = this.propertiesService.GetById<VisualisePropertiesViewModel>(id);
-            var html = new StringBuilder();
-            html.AppendLine($"<h1>{property.Name}</h1>");
-            html.AppendLine($"<h3>{property.Price}</h3>");
-            html.AppendLine($"<img src=\"{property.ImageUrl}\" />");
-            await this.emailSender.SendEmailAsync("Properties4Sale@lol.com", "Properties4Sale", "citij54266@econeom.com", property.Name, html.ToString());
             return this.RedirectToAction(nameof(this.ById), new { id });
         }
     }

@@ -6,10 +6,10 @@
 <body>
 
 
-
+    
 
     <main id="main">
-
+    
         <!-- ======= Intro Single ======= -->
         <section class="intro-single">
             <div class="container">
@@ -48,13 +48,12 @@
                         <form asp-action="Delete" asp-route-id="@this.Model.Id" id="deleteForm"></form>
                             }
 
-
+                        
                         <form method="post" asp-action="SendToEmail" asp-route-id="@this.Model.Id">
                             <button class="btn btn-warning">Send to my email</button>
                         </form>
 
                         }
-
 
 
                     </div>
