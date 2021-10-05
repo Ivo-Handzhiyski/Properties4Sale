@@ -3,9 +3,14 @@
     using System;
     using System.Collections.Generic;
 
+    using Properties4Sale.Data.Common.Repositories;
+    using Properties4Sale.Data.Models;
+
     public class PropertiesListViewModel
     {
         public IEnumerable<VisualisePropertiesViewModel> Properties { get; set; }
+
+        private readonly IDeletableEntityRepository<Property> propertiesRepository;
 
         public int PageNumber { get; set; }
 
@@ -22,5 +27,7 @@
         public int PropertiesCount { get; set; }
 
         public int ItemsPerPage { get; set; }
+
+        public string SearchTerm { get; set; }
     }
 }

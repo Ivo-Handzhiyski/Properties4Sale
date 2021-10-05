@@ -39,7 +39,6 @@
 
         public virtual TypeOfProperty TypeOfProperty { get; set; }
 
-
         public virtual ICollection<Image> Images { get; set; }
     }
 }

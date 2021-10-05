@@ -90,6 +90,18 @@
             return properties;
         }
 
+        public IEnumerable<T> GetAllBySearch<T>(int page, int itemsPerPage = 6)
+        {
+            var properties = this.propertiesRepository.AllAsNoTracking()
+            .OrderByDescending(x => x.Id)
+            .Skip((page - 1) * itemsPerPage)
+            .Take(itemsPerPage)
+            .To<T>()
+            .ToList();
+
+            return properties;
+        }
+
         public T GetById<T>(int id)
         {
             var property = this.propertiesRepository.AllAsNoTracking().Where(x => x.Id == id)
@@ -108,6 +120,16 @@
             var property = this.propertiesRepository.All().OrderByDescending(x => x.Id).Take(count).To<T>().ToList();
 
             return property;
+        }
+
+        public IEnumerable<T> GetAllBySearch<T>(string SearchTerm, int page, int itemsPerPage = 12)
+        {
+            if (string.IsNullOrEmpty(SearchTerm))
+            {
+                return this.propertiesRepository.All().To<T>().ToList();
+            }
+
+            return this.propertiesRepository.All().Where(x => x.Name.Contains(SearchTerm)).To<T>().ToList();
         }
 
         public IEnumerable<T> GetPropertiesRandom<T>(int count)
@@ -147,5 +169,7 @@
 
             await this.propertiesRepository.SaveChangesAsync();
         }
+
+       
     }
 }

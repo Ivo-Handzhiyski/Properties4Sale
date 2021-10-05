@@ -13,6 +13,8 @@
 
         IEnumerable<T> GetAll<T>(int page, int itemsPerPage = 12);
 
+        IEnumerable<T> GetAllBySearch<T>(string SearchTerm, int page, int itemsPerPage = 12);
+
         IEnumerable<T> GetProperties<T>(int count);
 
         IEnumerable<T> GetPropertiesRandom<T>(int count);

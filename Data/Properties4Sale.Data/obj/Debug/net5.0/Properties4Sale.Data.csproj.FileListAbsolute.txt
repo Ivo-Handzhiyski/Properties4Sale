@@ -21,7 +21,6 @@ C:\Users\Ivo\Desktop\VERI IMPROTA STUF\prp\Properties4Sale-main\Data\Properties4
 C:\Users\Ivo\Desktop\VERI IMPROTA STUF\prp\Properties4Sale-main\Data\Properties4Sale.Data\obj\Debug\net5.0\ref\Properties4Sale.Data.dll
 C:\Users\Ivo\Desktop\VERI IMPROTA STUF\prp\Properties4Sale-main\Data\Properties4Sale.Data\obj\Debug\net5.0\Properties4Sale.Data.pdb
 C:\Users\Ivo\Desktop\VERI IMPROTA STUF\prp\Properties4Sale-main\Data\Properties4Sale.Data\obj\Debug\net5.0\Properties4Sale.Data.genruntimeconfig.cache
-C:\Users\Ivo\Desktop\VERI IMPROTA STUF\Properties4Sale\Properties4Sale\Data\Properties4Sale.Data\obj\Debug\net5.0\Properties4Sale.Data.csprojAssemblyReference.cache
 C:\Users\Ivo\Desktop\VERI IMPROTA STUF\Properties4Sale\Properties4Sale\Data\Properties4Sale.Data\obj\Debug\net5.0\Properties4Sale.Data.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Ivo\Desktop\VERI IMPROTA STUF\Properties4Sale\Properties4Sale\Data\Properties4Sale.Data\obj\Debug\net5.0\Properties4Sale.Data.AssemblyInfoInputs.cache
 C:\Users\Ivo\Desktop\VERI IMPROTA STUF\Properties4Sale\Properties4Sale\Data\Properties4Sale.Data\obj\Debug\net5.0\Properties4Sale.Data.AssemblyInfo.cs
@@ -44,3 +43,4 @@ C:\Users\Ivo\Desktop\VERI IMPROTA STUF\Properties4Sale\Properties4Sale\Data\Prop
 C:\Users\Ivo\Desktop\VERI IMPROTA STUF\Properties4Sale\Properties4Sale\Data\Properties4Sale.Data\bin\Debug\net5.0\Properties4Sale.Data.Models.pdb
 C:\Users\Ivo\Desktop\VERI IMPROTA STUF\Properties4Sale\Properties4Sale\Data\Properties4Sale.Data\obj\Debug\net5.0\Properties4Sale.Data.csproj.CopyComplete
 C:\Users\Ivo\Desktop\VERI IMPROTA STUF\Properties4Sale\Properties4Sale\Data\Properties4Sale.Data\obj\Debug\net5.0\Properties4Sale.Data.genruntimeconfig.cache
+C:\Users\Ivo\Desktop\VERI IMPROTA STUF\Properties4Sale\Properties4Sale\Data\Properties4Sale.Data\obj\Debug\net5.0\Properties4Sale.Data.csproj.AssemblyReference.cache

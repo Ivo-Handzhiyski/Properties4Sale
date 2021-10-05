@@ -1,0 +1,157 @@
+﻿@model Properties4Sale.Web.ViewModels.Property.PropertiesListViewModel
+<!DOCTYPE html>
+<html lang="en">
+
+
+<body>
+    <main id="main">
+
+        <!-- ======= Intro Single ======= -->
+        <section class="intro-single">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-lg-8">
+                        <div class="title-single-box">
+                            <h1 class="title-single">Our Amazing Properties</h1>
+                            <span class="color-text-a">Grid Properties</span>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-lg-4">
+                        <nav aria-label="breadcrumb" class="breadcrumb-box d-flex justify-content-lg-end">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item">
+                                    <a href="#">Home</a>
+                                </li>
+                                <li class="breadcrumb-item active" aria-current="page">
+                                    All Properties
+                                </li>
+                            </ol>
+                        </nav>
+                        <div class="dropdown-menu-lg-left">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Dropdown button
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" asp-controller="Properties" asp-action="SortByPriceDesc">Sort by price desc.</a>
+                                <a class="dropdown-item" asp-controller="Properties" asp-action="SortByPriceAsc">Sort by price asc.</a>
+                            </div>
+                        </div>
+                    </div>
+                    <form asp-controller="Properties" asp-action="Search">
+                        <div class="input-group">
+                            <input class="form-control" type="text" name="SearchTerm" />
+                            <div class="input-group-append">
+                                <button type="submit" class="btn btn-primary">Search</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section><!-- End Intro Single-->
+        <!-- ======= Property Grid ======= -->
+
+
+        <section class="property-grid grid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+
+                    </div>
+                    @foreach (var property in this.Model.Properties)
+                    {
+
+        <div class="col-md-6">
+            <div class="card-box-a card-shadow">
+                <div class="img-box-a">
+                    <img height="2500px" width="1500px" src=@property.ImageUrl alt="" class="img-a img-fluid">
+                </div>
+                <div class="card-overlay">
+                    <div class="card-overlay-a-content">
+                        <div class="card-header-a">
+                            <h2 class="card-title-a">
+                                <a href="#">
+                                    @property.Name
+                                    <br />
+                                </a>
+                            </h2>
+                        </div>
+                        <div class="card-body-a">
+                            <div class="price-box d-flex">
+                                <span class="price-a">@property.TypeOfPropertyName| $ @property.Price</span>
+                            </div>
+                            <a asp-action="ById" asp-route-id="@property.Id" class="link-a">
+                                Click here to view
+                                <span class="ion-ios-arrow-forward"></span>
+                            </a>
+                        </div>
+                        <div class="card-footer-a">
+                            <ul class="card-info d-flex justify-content-around">
+                                <li>
+                                    <h4 class="card-info-title">Area</h4>
+                                    <span>
+                                        @property.Area m
+                                        <sup>2</sup>
+                                    </span>
+                                </li>
+                                <li>
+                                    <h4 class="card-info-title">Beds</h4>
+                                    <span>@property.Beds</span>
+                                </li>
+                                <li>
+                                    <h4 class="card-info-title">Baths</h4>
+                                    <span>@property.Baths</span>
+                                </li>
+                                <li>
+                                    <h4 class="card-info-title">Garages</h4>
+                                    <span>@property.Garages</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>}
+                </div>
+            </div>
+        </section><!-- End Property Grid Single-->
+
+        <section>
+            <nav aria-label="...">
+                <ul class="pagination justify-content-center">
+                    <li class="page-item @if (!Model.HasPreviousPage) { <text>disabled</text> } ">
+                        <a class="page-link" asp-action="All" asp-route-id="@Model.PreviousPageNumber">Previous</a>
+                    </li>
+                    @for (int i = Model.PageNumber - 3; i < Model.PageNumber; i++)
+                    {
+                        if (i > 0)
+                        {
+        <li class="page-item"><a class="page-link" asp-action="All" asp-route-id="@i">@i</a></li>}
+
+                    }
+                    <li class="page-item active">
+                        <a class="page-link" href="#!">@Model.PageNumber <span class="sr-only">(current)</span></a>
+                    </li>
+                    @for (int i = Model.PageNumber + 1; i <= Model.PageNumber + 3; i++)
+                    {
+                        if (i <= Model.PagesCount)
+                        {
+        <li class="page-item"><a class="page-link" asp-action="All" asp-route-id="@i">@i</a></li>}
+
+                    }
+                    <li class="page-item @if(!Model.HasNextPage) { <text>disabled</text> } ">
+                        <a class="page-link" asp-action="All" asp-route-id="@Model.NextPageNumber">Next</a>
+                    </li>
+                </ul>
+            </nav>
+        </section><!-- End Property Grid Single-->
+
+    </main><!-- End #main -->
+
+
+    <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+    <div id="preloader"></div>
+
+
+</body>
+
+</html>

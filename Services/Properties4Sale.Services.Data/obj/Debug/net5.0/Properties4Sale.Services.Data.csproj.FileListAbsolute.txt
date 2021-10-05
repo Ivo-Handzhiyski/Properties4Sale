@@ -31,7 +31,6 @@ C:\Users\Ivo\Desktop\VERI IMPROTA STUF\Properties4Sale\Properties4Sale\Services\
 C:\Users\Ivo\Desktop\VERI IMPROTA STUF\Properties4Sale\Properties4Sale\Services\Properties4Sale.Services.Data\bin\Debug\net5.0\Properties4Sale.Data.Models.pdb
 C:\Users\Ivo\Desktop\VERI IMPROTA STUF\Properties4Sale\Properties4Sale\Services\Properties4Sale.Services.Data\bin\Debug\net5.0\Properties4Sale.Web.ViewModels.pdb
 C:\Users\Ivo\Desktop\VERI IMPROTA STUF\Properties4Sale\Properties4Sale\Services\Properties4Sale.Services.Data\bin\Debug\net5.0\Properties4Sale.Services.Mapping.pdb
-C:\Users\Ivo\Desktop\VERI IMPROTA STUF\Properties4Sale\Properties4Sale\Services\Properties4Sale.Services.Data\obj\Debug\net5.0\Properties4Sale.Services.Data.csprojAssemblyReference.cache
 C:\Users\Ivo\Desktop\VERI IMPROTA STUF\Properties4Sale\Properties4Sale\Services\Properties4Sale.Services.Data\obj\Debug\net5.0\Properties4Sale.Services.Data.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Ivo\Desktop\VERI IMPROTA STUF\Properties4Sale\Properties4Sale\Services\Properties4Sale.Services.Data\obj\Debug\net5.0\Properties4Sale.Services.Data.AssemblyInfoInputs.cache
 C:\Users\Ivo\Desktop\VERI IMPROTA STUF\Properties4Sale\Properties4Sale\Services\Properties4Sale.Services.Data\obj\Debug\net5.0\Properties4Sale.Services.Data.AssemblyInfo.cs
@@ -40,3 +39,4 @@ C:\Users\Ivo\Desktop\VERI IMPROTA STUF\Properties4Sale\Properties4Sale\Services\
 C:\Users\Ivo\Desktop\VERI IMPROTA STUF\Properties4Sale\Properties4Sale\Services\Properties4Sale.Services.Data\obj\Debug\net5.0\Properties4Sale.Services.Data.dll
 C:\Users\Ivo\Desktop\VERI IMPROTA STUF\Properties4Sale\Properties4Sale\Services\Properties4Sale.Services.Data\obj\Debug\net5.0\ref\Properties4Sale.Services.Data.dll
 C:\Users\Ivo\Desktop\VERI IMPROTA STUF\Properties4Sale\Properties4Sale\Services\Properties4Sale.Services.Data\obj\Debug\net5.0\Properties4Sale.Services.Data.pdb
+C:\Users\Ivo\Desktop\VERI IMPROTA STUF\Properties4Sale\Properties4Sale\Services\Properties4Sale.Services.Data\obj\Debug\net5.0\Properties4Sale.Services.Data.csproj.AssemblyReference.cache

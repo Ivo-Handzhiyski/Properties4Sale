@@ -115,6 +115,35 @@
             return this.View(viewModel);
         }
 
+        public IActionResult Search(string SearchTerm = "", int id = 1)
+        {
+            const int ItemsPerPage = 6;
+            if (SearchTerm != "" && SearchTerm != null)
+            {
+
+                var viewModel = new PropertiesListViewModel
+                {
+                    ItemsPerPage = ItemsPerPage,
+                    PageNumber = id,
+                    PropertiesCount = this.propertiesService.GetCount(),
+                    Properties = this.propertiesService.GetAllBySearch<VisualisePropertiesViewModel>(SearchTerm, id, ItemsPerPage),
+                };
+
+                return this.View(viewModel);
+            }
+            else
+            {
+                var viewModel = new PropertiesListViewModel
+                {
+                    ItemsPerPage = ItemsPerPage,
+                    PageNumber = id,
+                    PropertiesCount = this.propertiesService.GetCount(),
+                    Properties = this.propertiesService.GetAll<VisualisePropertiesViewModel>(id, ItemsPerPage),
+                };
+                return this.View(viewModel);
+            }
+        }
+
         public IActionResult ById(int id)
         {
             this.ViewBag.userId = this.userManager.GetUserId(this.HttpContext.User);
